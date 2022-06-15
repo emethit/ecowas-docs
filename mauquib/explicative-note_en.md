@@ -7,242 +7,239 @@ The purpose of this technical note is to support users of data relating to quali
 
 This note seeks to be complete, it may be that features have been omitted or still require in-depth documentation. MAUQUIB is a web application and in most cases screenshots have been included for better understanding. As the application is constantly evolving, if the screenshots do not match, it is not a problem. Finally, different text styles are used to highlight important parts or particular types of text.
 
-# LEXIQUE
+# LEXICON
 
-- **Connexion** : c'est une action qui permet de lier un dispositif informatique à un autre.
+- **Connection**: this is an action that links one computing device to another.
 
-- **Internet** : Ensemble de réseaux mondiaux interconnectés qui permet à des ordinateurs et à des serveurs de communiquer efficacement au moyen d'un protocole de communication commun (IP). Ses principaux services sont le Web, le FTP, la messagerie et les groupes de discussion.
+- **Internet**: A set of interconnected global networks that allows computers and servers to communicate effectively using a common communications protocol (IP). Its main services are the Web, FTP, messaging and newsgroups.
 
-- **Navigateur web** : c'est une application qui permet de consulter des sites web.
+- **Web browser**: This is an application that allows you to view websites.
 
-- **Serveur** : c'est un dispositif informatique matériel ou logiciel qui offre des services, à différents clients. Les services les plus courants sont : partages fichiers, accès aux informations, courrier électronique, partages imprimantes, logiciels applicatifs etc. ...
+- **Server**: It is a hardware or software computing device that provides services to different clients. The most common services are: file sharing, access to information, electronic mail, printer sharing, application software, etc. ...
 
-- **Synchronisation** : c'est le fait de récupérer des données d'un dispositif informatique à un autre.
+- **Synchronization**: This is the act of retrieving data from one computing device to another.
 
-- **Transfert** : c'est le fait d'envoyer des données d'un dispositif informatique à un autre.
+- **Transfer**: This is the act of sending data from one computing device to another.
 
-- **Téléchargement** : c'est une opération de transmission d'informations d'un site à un autre, en d'autres termes récupération d'information distants.
+- **Downloading**: this is an operation of transmitting information from one site to another, in other words retrieving remote information.
 
 # INTRODUCTION
 
-Ce guide a pour objet de présenter le contenu de la base de données relative à la qualité, à l'industrie et de donner quelques conseils pratiques sur la manière d'utiliser cette base de données. La base de données a été réalisée grâce à la contribution de l'Union Européenne et de Projet Compétitivité et Infrastructure Qualité de l'Afrique de l'Ouest (WACQIP)[^1]. Il ne s'agit pas d'un produit fini ; cette base est un projet continu qui sera progressivement enrichi par des nouveaux apports. En dépit du développement des bases de données et des catalogues de bibliothèques en ligne, un grand nombre d'informations bibliographiques figure encore uniquement dans des sources non disponibles en ligne, telles que les catalogues de bibliothèques, les répertoires et revus sectoriels, et doit être collecté en consultant les revues, collections et séries. L'un des objectifs du projet MAUQUIB est de mettre à disposition du public ces informations. L'intérêt de cette base de données est tout d'abord de recenser et stocker l'ensemble des données récoltées dans les différents domaines de la qualité et de l'industrie et d'autres part de rendre disponibles différentes informations par rapport à ce qui se fait en matière de la qualité et de l'industrie en Mauritanie. La mise en place de cette base de données permet donc aux utilisateurs de données (les décideurs politiques, les chercheurs, les investisseurs, les étudiants, etc.) de disposer d'une source fiable de données sur la qualité et l'industrie de la Mauritanie. Les contributions, qu'elles proviennent de chercheurs, d'étudiants, des décideurs ou de toute personne intéressée par la qualité et l'industrie, sont bienvenues.
+The purpose of this guide is to present the contents of the database relating to quality, industry and to give some practical advice on how to use this database. The database was produced thanks to the contribution of the European Union and the West African Competitiveness and Quality Infrastructure Project (WACQIP)[^1]. This is not a finished product; this database is an ongoing project that will be gradually enriched by new contributions. Despite the development of online library catalogs and databases, much bibliographic information is still found only in sources not available online, such as library catalogs, sector directories and journals, and needs to be collected by consulting journals, collections and series. One of the objectives of the MAUQUIB project is to make this information available to the public. The interest of this database is first of all to identify and store all the data collected in the various fields of quality and industry and on the other hand to make available different information in relation to what is done in terms of quality and industry in Mauritania. The establishment of this database therefore allows data users (policy makers, researchers, investors, students, etc.) to have a reliable source of data on the quality and industry of the Mauritania. Contributions, whether from researchers, students, policy makers or anyone interested in quality and industry, are welcome.
 
-Le présent document dénommé « Note explicative sur le mode de fonctionnement de la Base » (guide de fonctionnalité de l'application MAUQUIB) s'adresse à tous les utilisateurs qui interagiront avec la Base de données dans un cadre de consultation des données relatives à la qualité et à l'industrie de la Mauritanie et d'alimentation ou d'intégration de données dans la Base. Cette note vous permet de comprendre toutes les fonctionnalités de la Base dans sa nouvelle première version et vous assure une meilleure accessibilité à la Base. Cette note comprend trois (03) parties. La première partie présente les informations générales sur la base de données MAUQUIB, la deuxième aborde le fonctionnement de la recherche des données au niveau de la base MAUQUIB et dans la troisième partie, est exposé le fonctionnement de la base relatif à la saisie et à l'importation des données dans MAUQUIB.
+This document called "Explanatory note on the mode of operation of the Base" (feature guide for the MAUQUIB application) is intended for all users who will interact with the Database in a context of consulting data relating to the quality and industry of Mauritania and supply or integration of data in the Base. This note allows you to understand all the functionalities of the Base in its new first version and ensures better accessibility to the Base. This note comprises three (03) parts. The first part presents general information on the MAUQUIB database, the second deals with the functioning of the search for data at the level of the MAUQUIB database and in the third part, is exposed the functioning of the database relating to the entry and processing. importing data into MAUQUIB.
 
-# I- INFORMATIONS GENERALES DE LA BASE DE DONNEES MAUQUIB
+# I- GENERAL INFORMATION ON THE MAUQUIB DATABASE
 
-Les différentes informations générales concernant la base de données MAUQUIB sont : les prérequis pour avoir accès à la base, le démarrage et la page d'accueil de la base de données MAUQUIB puis le menu de navigation dans la base de données MAUQUIB.
+The various general information concerning the MAUQUIB database are: the prerequisites for accessing the database, the startup and the home page of the MAUQUIB database, then the navigation menu in the MAUQUIB database.
 
-# Les pré-requis
+# Prerequisites
 
-Cette base de données web est développée sur une plate-forme installée au niveau d'un serveur web. Son utilisation sera détaillée dans les parties suivantes. Pour avoir accès à la base de données MAUQUIB, l'utilisateur (les décideurs politiques, les chercheurs, les investisseurs, les étudiants, les administrateurs de la base, etc.) a besoin :
+This web database is developed on a platform installed on a web server. Its use will be detailed in the following sections. To have access to the MAUQUIB database, the user (policy makers, researchers, investors, students, database administrators, etc.) needs:
 
-- d'une connexion internet et
+- an internet connection and
 
-- d'un navigateur web (Firefox, Chrome, etc.) et / ou ;
+- a web browser (Firefox, Chrome, etc.) and/or;
 
-- d'un profil : disposer d'un profil d'administrateur sur le portail MAUQUIB permet à son détenteur de s'identifier, de s'authentifier. Ce statut lui accorde l'autorisation de saisir, de modifier ou de supprimer des données de la base. Le profil d'administrateur est attribué automatiquement aux points focaux dans le domaine de la qualité, de l'industrie et à d'autres personnes bien identifiées. Tout administrateur dispose d'un identifiant unique et d'un mot de passe confidentiel. Tous les autres utilisateurs (par exemples les étudiants, chercheurs, décideurs) ne bénéficient pas d'un profil d'administrateur.
+- a profile: having an administrator profile on the MAUQUIB portal allows its holder to identify and authenticate. This status grants him the authorization to enter, modify or delete data from the database. The administrator profile is automatically assigned to focal points in the field of quality, industry and other well-identified people. All administrators have a unique identifier and a confidential password. All other users (for example students, researchers, decision-makers) do not benefit from an administrator profile.
 
-1. **Démarrage et page d'accueil**
+1. **Getting Started and Home Page**
 
-![](./media/image7.png){width="5.892361111111111in" height="4.183333333333334in"}Depuis un navigateur web, il faut taper le lien https//mauquib.mr La figure n°1 ci-dessous représente la page d'accueil de l'application.
+![](./media/image7.png){width="5.892361111111111in" height="4.183333333333334in"}From a web browser, type the link https//mauquib.mr The figure n°1 below represents the home page of the application.
 
-Figure 1 : Capture d'écran de la page d'accueil de la base de données MAUQUIB
+Figure 1: Screenshot of the MAUQUIB database home page
 
-La page d'accueil vous présente le menu de navigation dans la base de données MAUQUIB.
+The home page presents the navigation menu in the MAUQUIB database.
 
-# Menu de navigation de la page d'accueil de MAUQUIB
+# MAUQUIB Home Page Navigation Menu
 
-Le menu de navigation permet de parcourir la base de données MAUQUIB à partir d'une structure thèmes/sous thèmes filtrée par variables. Les thèmes sont accessibles via le cadre des thèmes. La barre de navigation facilite la navigation à travers les thèmes. L'utilisateur sélectionne un thème en cliquant sur la case portant le nom du thème ; le choix des sous thèmes se fait de la même façon après avoir cliqué sur un thème qui dispose de sous thèmes. Les différents thèmes proposés au niveau du menu de navigation de la page d'accueil sont :
+The navigation menu allows you to browse the MAUQUIB database from a theme/sub-theme structure filtered by variables. Themes are accessed through the Themes framework. The navigation bar makes it easy to navigate through themes. The user selects a theme by clicking on the box bearing the name of the theme; the choice of sub-themes is done in the same way after having clicked on a theme which has sub-themes. The different themes offered in the navigation menu of the home page are:
 
-- En haut de la page d'accueil, vous avez les thèmes ci-après :
+- At the top of the home page, you have the following themes:
 
-- Home / Accueil : pour revenir sur la page d'accueil lors de votre navigation dans la base ;
+- Home / Accueil: to return to the home page when browsing the database;
 
-- A propos : vous avez une brève description de la base de données MAUQUIB ;
+- By the way: you have a brief description of the MAUQUIB database;
 
-- Nous contacter : vous avez la possibilité d'écrire au responsables de la Base de données
+- Contact us: you can write to the person in charge of the Database
 
-- Liens externes : vous avez accès aux Blog des associations de consommateurs - Forum des associations de consommateurs - Forum d'échange entre les structures de maintenance et les laboratoires ;
+- External links: you have access to the Blog of consumer associations - Forum of consumer associations - Exchange forum between maintenance structures and laboratories;
 
-- Les langues de navigation sur la page d'accueil et dans la base de données : trois langues de navigation sont proposées. Il s'agit de ***l'ANGLAIS,*** du ***FRANÇAIS*** et du ***PORTUGAIS***. La langue de navigation par défaut est l'**ANGLAIS** ;
+- Browsing languages on the home page and in the database: three browsing languages are offered. This is ***ENGLISH,*** ***ENGLISH*** and ***PORTUGUESE***. The default navigation language is **ENGLISH**;
 
-- Deux interfaces de consultations des données : elles sont situées au niveau de la partie centrale de la page d'accueil de la base de données et permettent d'avoir accès aux statistiques sur la qualité et sur l'industrie. Ces interfaces font partie de l'espace public.
+- Two data consultation interfaces: they are located in the central part of the database home page and provide access to statistics on quality and on the industry. These interfaces are part of the public space.
 
-![](./media/image8.png){width="6.459722222222222in" height="0.9791666666666666in"}Figure 2 : Capture d'écran partielle des interfaces de consultation des données dans MAUQUIB
+![](./media/image8.png){width="6.459722222222222in" height="0.9791666666666666in"}Figure 2: Partial screenshot of data consultation interfaces in MAUQUIB
 
-- En bas de page :
+- At the bottom of the page :
 
-- Saisie de données : ce sous thème est l'espace privé de la base de données. Il est réservé aux administrateurs ;
+- Data entry: this sub-theme is the private area of the database. It is reserved for administrators;
 
-- Envoyer un commentaire : vous pouvez copier l'adresse mail pour envoyer un mail ou cliquer sur le lien pour ouvrir votre application mail pour envoyer un commentaire sur la base de données.
+- Send a comment: you can copy the email address to send a mail or click on the link to open your mail application to send a comment on the database.
 
-Si vous disposez d'un profil d'administrateur, il vous sera possible d'accéder aux formulaires de saisie des données qualités à travers le menu SAISIE DE DONNEES de la page d'accueil. Les données industrie ne seront pas saisies. Ces données renseignées sur une maquette au format Excel, seront directement importées dans l'application MAUQUIB après un contrôle de cohérence de l'expert - contact de la Base au sein du Département de la statistique de la Commission de la CEDEAO.
+If you have an administrator profile, you will be able to access the quality data entry forms through the DATA ENTRY menu on the home page. Industry data will not be entered. These data filled in on a model in Excel format, will be directly imported into the MAUQUIB application after a consistency check by the expert - contact of the Base within the Department of Statistics of the ECOWAS Commission.
 
-# 1.3.1. Sélection des thèmes
+# 1.3.1. Selection of themes
 
-L'utilisateur peut naviguer dans la base de données via le menu de navigation sur la partie supérieure du portail de données MAUQUIB. Comme mentionné plus haut, les couches de données MAUQUIB sont organisées par thèmes /sous thèmes. Les utilisateurs peuvent naviguer à travers les thèmes en cliquant simplement sur les thèmes dans la partie supérieure. Des indications sont fournies pour chaque groupe de thèmes et de sous thèmes.
+The user can navigate through the database via the navigation menu on the top of the MAUQUIB Data Portal. As mentioned above, MAUQUIB data layers are organized by themes/sub-themes. Users can navigate through the themes by simply clicking on the themes at the top. Indications are provided for each group of themes and sub-themes.
 
-# 1.3.2. Sélection des sous - thèmes
+# 1.3.2. Selection of sub-themes
 
-Une fois le thème sélectionné, les sous-thèmes correspondants sont disponibles depuis une fenêtre pop-up interactive dans la partie gauche de la page**.**
+Once the theme has been selected, the corresponding sub-themes are available from an interactive pop-up window on the left side of the page**.**
 
 ![](./media/image9.jpeg){width="6.581744313210849in" height="1.4606485126859143in"}
 
-Figure 3 : Capture d'écran des thèmes et sous-thèmes de la base de données MAUQUIB
+Figure 3: Screenshot of MAUQUIB database topics and subtopics
 
-1. **Consultation des données / interfaces de consultation**
+1. **Consultation of data / consultation interfaces**
 
-Pour consulter les données, il faut cliquer sur **« voir les données qualité »** pour les données qualités et **« voir les données industrie »** en ce qui concerne les données relatives à l'industrie. Lorsque l'une des interfaces ci-dessus est choisie, elle se met en surbrillance verte. Ces deux interfaces sont situées dans la zone centrale de la page d'accueil (confère figure 2 de la page 8).
+To consult the data, click on **"see quality data"** for quality data and **"see industry data”** with respect to industry data. When one of the above interfaces is chosen, it will highlight green. These two interfaces are located in the central area of the home page (see figure 2 on page 8).
 
 ![](./media/image10.png){width="5.816402012248469in" height="2.311111111111111in"}
 
-Figure 4 : Capture d'écran partielle de la fenêtre de recherche / requête des données qualité
+Figure 4: Partial screenshot of the quality data search / query window
 
 ![](./media/image11.png){width="6.4631944444444445in" height="2.7111111111111112in"}
 
-Figure 5: Capture d'écran partielle de la fenêtre de consultation des données industrie
+Figure 5: Partial screenshot of the industry data consultation window
 
-# Langues de navigation dans la base de données
+# Database navigation languages
 
-Trois langues de navigation sont proposées pour la navigation dans le menu de la base de données MAUQUIB. La langue de navigation par défaut est l'ANGLAIS. Cependant vous pouvez changer la langue de navigation et d'affichage des résultats de recherche selon votre convenance entre les trois langues proposées. Pour cela, cliquez sur la langue désirée dans le coin supérieur droit de la page d'accueil.
+Three navigation languages are offered for navigation in the MAUQUIB database menu. The default navigation language is ENGLISH. However, you can change the language of navigation and display of search results according to your convenience between the three languages offered. To do this, click on the desired language in the upper right corner of the home page.
 
 ![](./media/image12.png){width="5.229166666666667in" height="2.5840277777777776in"}
 
-Figure 6 : Capture d'écran relative aux langues de navigation dans la base de données
+Figure 6: Database navigation languages screenshot
 
-# Saisie des données dans la base
+# Entering data into the database
 
-Ce menu est **l'espace privé** de la base de données. Il est réservé aux utilisateurs qui ont le profil d'administrateur. Ces derniers assurent la mise à jour régulière de la base de données. Cette mise à jour comprend l'alimentation de la base en données, la modification ou la suppression des données de la base. Ils assurent aussi la maintenance.
+This menu is the **private area** of the database. It is reserved for users who have the administrator profile. These ensure the regular updating of the database. This update includes supplying the database with data, modifying or deleting data from the database. They also provide maintenance.
 
-Cette session est beaucoup plus développée dans la troisième partie de cette note.
+This session is much more developed in the third part of this note.
 
-# II- FONCTIONNEMENT DE LA BASE DE DONNEESMAUQUIB : RECHERCHE DES DONNEES
+# II- OPERATION OF THE MAUQUIB DATABASE: DATA RESEARCH
 
-Le fonctionnement de la base de données MAUQUIB est vu sous deux aspects : la rechercher/requête des données dans la base et la saisie des données dans la base. Dans cette partie nous décrivons le fonctionnement de la base en termes de recherche de données.
+The operation of the MAUQUIB database is seen in two aspects: the search/query for data in the database and the entry of data into the database. In this part we describe how the database works in terms of data retrieval.
 
-Un utilisateur peut rechercher deux types de données dans la base MAUQUIB. Il s'agit des données relatives à la qualité et celles relatives à l'industrie de la Mauritanie.
+A user can search for two types of data in the MAUQUIB database. These are data relating to quality and those relating to Mauritania's industry.
 
-# Recherche des données QUALITE
+# QUALITY data search
 
-La recherche des données qualité se fait à travers des formulaires de requêtes dont les champs varient en fonction des items de recherche. Les données relatives à la QUALITE disponibles dans la base de données ECOQUIB couvrent les : (i) laboratoires de la Mauritanie, (ii) Entreprises, (iii) Organises d'accréditation/certification, (iv) Organismes d'inspection, (v) Organismes de normalisation, (vi) Centres de formation, (vii) Centres de réparation, (viii) Cabinets conseils, (ix) Consultants/experts infrastructures qualité, (x) Normes (catalogues des normes de qualité), (xi) Points d'information, (xii) Règlements techniques, (xiii) Documents de politique nationale de la qualité, (xiv) Membres de comité régional et (xv) Associations de consommateurs.
+The search for quality data is done through query forms whose fields vary according to the search items. The QUALITY data available in the ECOQUIB database covers: (i) Mauritania laboratories, (ii) Companies, (iii) Accreditation/certification bodies, (iv) Inspection bodies, (v) Standardization bodies, (vi) Training centers, (vii) Repair centers, (viii) Consulting firms, (ix) Consultants/quality infrastructure experts, (x) Standards (catalogues of quality standards), (xi) Points d information, (xii) Technical regulations, (xiii) National quality policy documents, (xiv) Regional committee members and (xv) Consumer associations.
 
-1. **Recherche des données relatives aux laboratoires**
+1. **Finding laboratory data**
 
-La recherche des données laboratoires se fait à l'aide d'un formulaire qui se présente comme indiqué sur la figure ci-après. Sur ce formulaire, huit (08) champs sont proposés dont un est obligatoire pour que la requête soit prise en compte. Le processus de recherche est le suivant :
+The search for laboratory data is done using a form as shown in the figure below. On this form, eight (08) fields are proposed, one of which is mandatory for the request to be taken into account. The search process is as follows:
 
-(1) **Cliquer** sur **« voir les données qualité »** dans la zone centrale de la page d'accueil de MAUQUIB;
+(1) **Click** on **“view quality data”** in the central area of the page home of MAUQUIB;
 
-(2) **Choisir** « laboratoires d'analyses et d'étalonnage » à l'aide de la liste déroulante disponible dans le champ « Type de données recherchées ».
+(2) **Choose** “analysis and calibration laboratories” using the drop-down list available in the “Type of data sought” field.
 
-N.B. Le champ **« Type de données recherchées »** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte. Dans le cas contraire un message d'erreur vous est retourné par le serveur.
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account. Otherwise, an error message is returned to you by the server.
 
 ![](./media/image13.jpeg){width="3.375in" height="2.189583333333333in"}
 
-> Figure 7 : Message d'erreur _non spécification du champ «Type de données recherchées»
+> Figure 7: Error message _non specification of the "Type of data sought" field
 
-Lorsque vous avez renseigné « laboratoires d'analyses et d'étalonnage » dans le champ obligatoire, vous pouvez affiner vos recherches en utilisant les champs qui suivent.
+When you have entered “analysis and calibration laboratories” in the mandatory field, you can refine your searches using the following fields.
 
-(3) **Spécifier** le «Type d'organisme» du laboratoire en faisant un choix dans la liste déroulante au niveau du champ «Type d'organisme». *Le type d'organisme* désigne le caractère public, privé ou semi public du laboratoire.
+(3) **Specify** the "Organism Type" of the laboratory by choosing from the drop-down list in the "Organism Type" field. *The type of organization* designates the public, private or semi-public nature of the laboratory.
 
-(4) **Spécifier** le «Type de certification » obtenu par le laboratoire en faisant un choix dans la liste déroulante au niveau du champ «Type de certification / accréditation» ; les différents types sont les normes de certification du secteur ou de la structure.
+(4) **Specify** the "Type of certification" obtained by the laboratory by choosing from the drop-down list in the "Type of certification / accreditation" field; the different types are industry or facility certification standards.
 
-(5) **Cocher** la case **« Certifié »** si vous souhaitez **rechercher les laboratoires certifiés** ou **cocher** la case **« Accrédité »** si vous souhaitez **voir les laboratoires accrédités** de la Mauritanie**.** Ne cocher ni l'une, ni l'autre des cases si vous êtes indifférents à cette distinction. Dans ce cas la recherche vous retournera tous les laboratoires de la Mauritanie** ;**
+(5) **Check** the **"Certified"** box if you want <strong data-md-="" type="double_emphasis">search for certified labs</strong> or **check** the box **"Accredited"&lt; /strong&gt; if you want to **see accredited laboratories** in Mauritania**.** Do not check either box if you are indifferent to this distinction. In this case the search will return all laboratories in Mauritania**;****
 
-(6) **Choisi**r le « secteur ou le domaine d'activité » de laboratoire dans la liste déroulante proposée à cet effet dans le champ « secteur / domaine d'activité ». Exemple de domaines d'activité : « Agriculture/Agroalimentaire » ou « Analyses médicales/biomédicales».
+(6) **Choose** the laboratory "sector or field of activity" from the drop-down list provided for this purpose in the "sector / field of activity ". Example of areas of activity: “Agriculture/Agri-food” or “Medical/biomedical analyses”.
 
-(7) **Spécifier** le ou les « PRODUIT(S) » analysé (s) dont vous souhaitez voir les laboratoires qui analysent le ou lesdits produits dans le champ « PRODUITS» en parcourant la liste déroulante proposée au niveau de ce champ ; Exemples de produits analysés : «Fluides corporels - Sang», «Manioc» ou encore «Textiles &amp; habillement».
+(7) &lt;strong data-md-type="double_emphasis"&gt;Specify&lt;/strong&gt; the "PRODUCT(S)" analyzed for which you wish to see the laboratories that analyze the said product(s) in the "PRODUCTS" field » by browsing the drop-down list proposed at the level of this field; Examples of products analysed: "Body fluids - Blood", "Cassava" or even "Textiles &amp; clothing".
 
-(8) **Choisir** « le paramètre d'analyse » relatifs au (x) produit (s) choisi (s) dans le dernier champ à l'aide de la liste déroulante proposée dans ce champ.
+(8) **Choose** "the analysis parameter" relating to the chosen product(s) in the last field using the drop-down list proposed in this field.
 
-(9) **Soumettre** votre requête en cliquant sur la case verte intitulée **« Rechercher »** situé au bas du formulaire ou «** Réinitialiser** » la requête en cliquant sur la case grise au bas du formulaire. Dans ce dernier cas, vous reprenez le remplissage du formulaire de recherche ou une partie.
+(9) **Submit** your request by clicking on the green box labeled **“Search”** located at bottom of the form or "**Reset**" the query by clicking the gray box at the bottom of the form. In the latter case, you resume filling out the search form or part of it.
 
 ![](./media/image14.jpeg){width="5.21875in" height="2.8229166666666665in"}
 
-Figure 8 : Capture d'écran d'un formulaire de recherche sur les laboratoires
+Figure 8: Screenshot of a lab search form
 
-1. **Recherche des données concernant les entreprises**
+1. **Search for company data**
 
-La consultation des métadonnées entreprises se fait à l'aide d'un formulaire dont la présentation diffère de celle des laboratoires. Sur ce formulaire, huit (08) champs sont proposés dont les deux premiers sont obligatoires pour que la requête soit prise en compte. Pour la consultation, il faut suivre le processus de recherche ci-après :
+Consultation of corporate metadata is done using a form whose presentation differs from that of the laboratories. On this form, eight (08) fields are proposed, the first two of which are mandatory for the request to be taken into account. For the consultation, follow the research process below:
 
-(1) **Cliquer** sur « voir les données qualité » dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view quality data” in the central area of the MAUQUIB homepage;
 
-(2) **Sélectionner** « Entreprises » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(2) **Select** "Companies" using a drop-down list, in the "Type of data sought" field.
 
-N.B. Le champ **« Type de données recherchées »** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte. Dans le cas contraire un message d'erreur vous est retourné par le serveur.
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account. Otherwise, an error message is returned to you by the server.
 
-Pour affiner vos recherches, utiliser les champs suivants :
+To narrow your searches, use the following fields:
 
-(3) **Spécifier** le « Type d'organisme » de l'entreprise en faisant un choix dans la liste déroulante au niveau du champ «Type d'organisme ». *Le type d'organisme* désigne le caractère public, privé ou partenariat public privé de l'entreprise ;
+(3) **Specify** the "Organization type" of the company by choosing from the drop-down list in the "Organization type" field. *The type of organization* designates the public, private or public-private partnership character of the company;
 
-(4) **Spécifier** le «Type de certification » dont vous souhaitez voir les entreprises disposant de cette certification, en faisant le choix du type de certification dans la liste déroulante au niveau du champ « Type de certification / accréditation » ; les différents types sont les normes de certification du secteur ou norme de certification de la structure ;
+(4) **Specify** the "Type of certification" from which you wish to see the companies holding this certification, by choosing the type of certification in the drop-down list at level of the “Type of certification / accreditation” field; the different types are industry certification standards or structure certification standard;
 
-(5) **Cocher** la case **« Certifiée »** si vous souhaitez **rechercher les entreprises certifiées** et / ou **cocher** la case **« Accréditée »** si vous souhaitez **voir les entreprises accréditées** de la Mauritanie**.** Ne cocher ni l'une, ni l'autre des cases si vous êtes indifférents à cette distinction.
+(5) **Check** the **"Certified"** box if you want <strong data-md-="" type="double_emphasis">search for certified companies</strong> and/or **check** the box **"Accredited »** if you wish to **see accredited companies** from Mauritania**.** Do not check either box if you are indifferent to this distinction.
 
-(6) **Choisi**r le « secteur ou le domaine d'activité » de l'entreprise dans la liste déroulante proposée à cet effet dans le champ « secteur / domaine d'activité ». Exemples de domaines d'activité : « Agriculture/Agroalimentaire » OU « Transport / Logistique ».
+(6) **Choose** the "sector or field of activity" of the company from the drop-down list provided for this purpose in the field "sector / field of activity”. Examples of business areas: "Agriculture/Agribusiness" OR "Transportation/Logistics".
 
-(7) **Spécifier** le ou les « PRODUIT(S) CONCERNE(S) » dont vous désirez rechercher les entreprises concernées dans le champ « PRODUITS » en parcourant la liste déroulante proposée au niveau de ce champ ; Les produits concernés désignent l'output de l'entreprise.
+(7) **Specify** the "PRODUCT(S) CONCERNED" for which you wish to search for the companies concerned in the field "PRODUCTS" by browsing the list drop-down menu proposed at the level of this control; The products concerned designate the output of the company.
 
-(8) **Choisir** les « Types de Prix qualité » obtenus par l'entreprise à l'aide de la liste déroulante proposée dans le champ intitulé « Prix qualité » ;
+(8) **Choose** the "Quality Price Types" obtained by the company using the drop-down list provided in the field entitled "Quality Price";
 
-(9) **Soumettre** la requête en cliquant sur la case verte intitulée «**Rechercher»** situé au bas du formulaire ou «**Réinitialiser**» la requête en cliquant sur la case grise au bas du formulaire.
+(9) **Submit** the query by clicking on the green box labeled “**Search”** located at bottom of the form or “**Reset**” query by clicking the gray box at the bottom of the form.
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran _formulaire
-entreprise.jpg](./media/image15.jpeg){width="6.299305555555556in" height="2.5514916885389325in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>_form<br>company.jpg](./media/image15.jpeg){width="6.299305555555556in" height="2.5514916885389325in"}
 
-Figure 9 : Capture d'écran d'un formulaire de recherche sur les entreprises
+Figure 9: Screenshot of a company search form
 
-1. **Recherche des données relatives aux organismes de certification ; d'inspection et de normalisation**
+1. **Search for data relating to certification bodies; inspection and standardization**
 
-La recherche des données sur les organismes de certification, d'inspection ou de normalisation se fait à l'aide d'un formulaire indiqué ci-dessous. Sur ce formulaire, sept (07) champs sont proposés dont le premier est obligatoire pour que la requête soit prise en compte.
+The search for data on certification, inspection or standardization bodies is done using the form indicated below. On this form, seven (07) fields are proposed, the first of which is mandatory for the request to be taken into account.
 
 ![](./media/image16.jpeg){width="5.50625in" height="2.6444444444444444in"}
 
-Figure 10 : Capture d'écran d'un formulaire de recherche des organismes de certification, d'inspection, de normalisation
+Figure 10: Screenshot of a search form for certification, inspection and standardization bodies
 
-Le processus de recherche est le suivant :
+The search process is as follows:
 
-(1) **Cliquer** sur « voir les données qualité » dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view quality data” in the central area of the MAUQUIB homepage;
 
-(2) **Choisir** « Organismes de certification » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ». **Ce champ est obligatoire pour que votre requête soit prise en compte**.
+(2) **Choose** "Certification Bodies" using a drop-down list, in the "Type of data sought" field. **This field is required for your request to be taken into account**.
 
-Pour affiner vos recherches, utiliser les champs suivants pour :
+To refine your searches, use the following fields to:
 
-(3) **Spécifier** le « Type d'organisme » de l'organisme de certification en faisant un choix dans la liste déroulante au niveau du champ « Type d'organisme » ;
+(3) **Specify** the "Organization type" of the certification body by choosing from the drop-down list in the "Organization type" field » ;
 
-(4) **Spécifier** le « Type de certification » attribué ou délivré par l'organisme en faisant un choix dans la liste déroulante au niveau du champ « Type de certification / accréditation » ; les différents types sont les normes de certification du secteur ou de la structure.
+(4) **Specify** the "Type of certification" awarded or issued by the organization by making a choice in the drop-down list in the field "Type of certification / accreditation”; the different types are industry or facility certification standards.
 
-(5) **Cocher** la case **« Certifié »** si vous souhaitez **rechercher les organismes certifiés** de la Mauritanie**.** Ne cocher pas cette case, si vous êtes indifférents à cette différence.
+(5) **Check** the **"Certified"** box if you want <strong data-md-="" type="double_emphasis">search for certified organizations</strong> in Mauritania**.** Do not check this box, if you are indifferent to this difference.
 
-(6) **Choisi**r le « secteur ou le domaine d'activité » de l'organisme de certification dans la liste déroulante proposée à cet effet dans le champ « secteur / domaine d'activité ». (Exemples de domaines/ secteurs d'activité : « Agriculture/Agroalimentaire » ou « Transport / Logistique »)
+(6) **Choose** the "sector or field of activity" of the certification body from the drop-down list provided for this purpose in the "sector / field of activity”. (Examples of areas/sectors of activity: “Agriculture/Agrifood” or “Transport/Logistics”)
 
-(7) **Spécifier** le « PRODUIT ANALYSE » concerné par les activités de l'organisme dans le champ « PRODUITS » en parcourant la liste déroulante proposée au niveau de ce champ ;
+(7) **Specify** the "ANALYSIS PRODUCT" concerned by the organization's activities in the "PRODUCTS" field by browsing the drop-down list proposed at the level of this field ;
 
-(8) **Choisir** « le paramètre d'analyse » relatifs au produit choisi dans le dernier champ du formulaire ;
+(8) **Choose** "the analysis parameter" relating to the product chosen in the last field of the form;
 
-(9) **Soumettre** la requête en cliquant sur la case verte intitulée **« Rechercher »** situé au bas du formulaire ou «** Réinitialiser** » la requête en cliquant sur la case grise au bas du formulaire.
+(9) **Submit** the request by clicking on the green box labeled **“Search”** located at bottom of the form or "**Reset**" the query by clicking the gray box at the bottom of the form.
 
 ```
 1.  **Recherche des données relatives aux centres de formation**
 ```
 
-Pour rechercher les métadonnées sur les centres de formation dans la base de données, il faut :
+To search for training center metadata in the database, you must:
 
-(1) **Cliquer** sur « voir les données qualité » dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view quality data” in the central area of the MAUQUIB homepage;
 
-(2) **Sélectionner** « Centres de formation » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(2) **Select** “Training Centers” using a drop-down list, in the “Type of data sought” field.
 
-Pour affiner vos recherches, vous pouvez :
+To narrow your searches, you can:
 
-(3) Cocher la case « Certifié » pour rechercher tous les centres de formation ayant obtenu une certification en Mauritanie ;
+(3) Check the "Certified" box to search for all training centers that have obtained certification in Mauritania;
 
-(4) **Spécifier** le « Type d'organisme » du centre de formation en faisant un choix dans la liste déroulante au niveau du champ « Type d'organisme » puis
+(4) **Specify** the "Type of organization" of the training center by making a choice in the drop-down list in the field "Type of organization" then
 
-(5) **Soumettre** la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou «**Réinitialiser**» la requête en cliquant sur la case grise au bas du formulaire.
+(5) **Submit** the request by clicking on the green box labeled **“Search”** located at bottom of the form or “**Reset**” query by clicking the gray box at the bottom of the form.
 
-# Le formulaire de recherche des centres de formation est indiqué sur la figure ci-dessous.
+# The search form for training centers is shown in the figure below.
 
 # ![](./media/image17.jpeg){width="5.863194444444445in" height="2.946527777777778in"}
 
@@ -258,69 +255,69 @@ Pour affiner vos recherches, vous pouvez :
 
 #
 
-Figure 11 : Formulaire de recherche des centres de formation dans la base de données MAUQUIB
+Figure 11: Search form for training centers in the MAUQUIB database
 
-1. **Recherche des données relatives aux centres de réparation**
+1. **Find repair center data**
 
-Pour rechercher les métadonnées sur les centres de réparation dans la base de données, il faut si vous êtes déjà dans la partie « consulter les données de la MAUQUIB » :
+To search for metadata on repair centers in the database, if you are already in the "consult MAUQUIB data" section:
 
-(1) **Sélectionner** « Centres de réparation » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées».
+(1) **Select** “Repair centers” using a drop-down list, in the “Type of data sought” field.
 
-> Pour affiner vos recherches, vous pouvez :
+> To narrow your searches, you can:
 
-(2) **Spécifier** le « Type d'organisme » du centre de réparation en faisant un choix dans la liste déroulante au niveau du champ « Type d'organisme » ;
+(2) **Specify** the "Organization type" of the repair center by choosing from the drop-down list in the "Organization type" field;
 
-(3) **Choisir** les « Types de prix » obtenus par l'entreprise à l'aide de la liste déroulante proposée dans le champ intitulé « Prix qualité » ; Puis,
+(3) **Choose** the "Types of prices" obtained by the company using the drop-down list proposed in the field entitled "Quality price"; Then,
 
-(4) **Soumettre** la requête en cliquant sur la case verte intitulée «**Rechercher** » situé au bas du formulaire ou « ** Réinitialiser »**  la requête en cliquant sur la case grise au bas du formulaire.
+(4) **Submit** the query by clicking on the green box labeled "**Search**" located at bottom of the form or "**Reset"** the query by clicking the gray box at the bottom of the form.
 
 ```
 1.   **Recherche des données relatives aux cabinets conseils**
 ```
 
-Le processus de recherche est le suivant :
+The search process is as follows:
 
-(1) Cliquer sur « voir les données qualité » dans la zone centrale de la page d'accueil de Mauquib ;
+(1) Click on “view quality data” in the central area of the Mauquib homepage;
 
-(2) Choisir « cabinets conseils » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(2) Choose “consulting firms” using a drop-down list, in the “Type of data sought” field.
 
-N.B. Le champ « Type de données recherchées » est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte.
+N.B. The “Type of data sought” field is mandatory and must not remain empty for the search to be taken into account.
 
-Affinez votre recherche en :
+Refine your search by:
 
-(3) Cocher la case « Certifiée » lorsque vous désirez voir uniquement les cabinets conseils certifiés de la Mauritanie ;
+(3) Check the "Certified" box when you want to see only certified consulting firms from Mauritania;
 
-(4) Spécifier le « secteur d'activité » du cabinet conseil dans le champ « secteur / domaine d'activité » à l'aide la liste déroulante proposée à cet effet.
+(4) Specify the "sector of activity" of the consulting firm in the field "sector / field of activity" using the drop-down list provided for this purpose.
 
-Puis,
+Then,
 
-(5) Soumettre la requête en cliquant sur la case verte intitulée « **Rechercher »** situé au bas du formulaire ou **« Réinitialiser »**  la requête en cliquant sur la case grise au bas du formulaire.
+(5) Submit the query by clicking on the green box labeled "**Search"** located at the bottom of the form or **&nbsp;"Reset"** the query by clicking the gray box at the bottom of the form.
 
-[]{#2.1.7._Recherche_des_données_relatives_a .anchor}**2.1.7. Recherche des données relatives aux consultants / experts en infrastructure qualité**
+[]{#2.1.7._Search_for_data_relative_a.anchor}**2.1.7. Search for data related to quality infrastructure consultants / experts**
 
-Le formulaire de recherche des consultants est le suivant :
+The search form for consultants is as follows:
 
 ![](./media/image18.jpeg){width="6.299305555555556in" height="3.9055555555555554in"}
 
-Figure 12 : Formulaire de recherche des consultants
+Figure 12: Consultant search form
 
-Pour remplir ce formulaire de recherche :
+To complete this search form:
 
-(1) **Sélectionner** « consultants / experts en infrastructure » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(1) **Select** "consultants / infrastructure experts" using a drop-down list, in the "Type of data sought" field.
 
-N.B. Le champ **« Type de données recherchées »** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte. Dans le cas contraire un message d'erreur vous est retourné par le serveur.
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account. Otherwise, an error message is returned to you by the server.
 
-Affinez votre recherche :
+Refine your search:
 
-(2) **Spécifier** le « secteur d'activité » du consultant dans le champ « secteur / domaine d'activité » à l'aide de la liste déroulante proposée à cet effet ;
+(2) **Specify** the "sector of activity" of the consultant in the field "sector / field of activity" using the drop-down list provided at this effect ;
 
-(3) **Spécifier** la « Norme de travail du consultant » en faisant un choix dans la liste déroulante au niveau du champ «Norme de travail» ; la norme de travail du consultant concerne le secteur d'activité du consultant ou le produit sur lequel ce dernier travaille ;
+(3) **Specify** the "Consultant's work standard" by choosing from the drop-down list in the "Working standard" field; the consultant's work standard relates to the consultant's industry or product on which the consultant is working;
 
-(4) **Spécifier** le «PRODUIT» sur lequel travaille le consultant dans le champ «PRODUITS» en parcourant la liste déroulante proposée au niveau de ce champ.
+(4) **Specify** the "PRODUCT" on which the consultant is working in the "PRODUCTS" field by browsing the drop-down list proposed at the level of this field.
 
-Puis**,**
+Then**,**
 
-(5) **Soumettre** la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou ** «Réinitialiser»**  la requête en cliquant sur la case grise au bas du formulaire.
+(5) **Submit** the request by clicking on the green box labeled **“Search”** located at bottom of the form or "Reset" the query by clicking the gray box at the bottom of the form.
 
 ```
 1.  **Recherche des données relatives aux normes**
@@ -330,23 +327,23 @@ Puis**,**
 <!-- -->
 ```
 
-(1) Spécifier dans le champ « PAYS », la Mauritanie si vous souhaitez voir les normes de la Mauritanie ou bien spécifier comme pays l'un ou tous les regroupements auxquels la Mauritanie est membre. à l'aide d'une liste déroulante dans le champ « PAYS ». Vous avez la possibilité de choisir simultanément la Mauritanie et les regroupements auxquels Elle est membre en spécifiant « TOUS »
+(1) Specify in the "COUNTRY" field, Mauritania if you wish to see the standards of Mauritania or specify as country one or all the groups to which Mauritania is a member. using a drop-down list in the "COUNTRY" field. You have the possibility of simultaneously choosing Mauritania and the groups to which it is a member by specifying "ALL"
 
-(2) Sélectionner « normes » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(2) Select “standards” using a drop-down list, in the “Type of data sought” field.
 
-N.B. Le champ « Type de données recherchées » est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte.
+N.B. The “Type of data sought” field is mandatory and must not remain empty for the search to be taken into account.
 
-Affinez votre recherche :
+Refine your search:
 
-(3) **Sélectionner** le «Type de norme » dans le champ intitulé «Type de norme» ;
+(3) **Select** the “Standard Type” in the field labeled “Standard Type”;
 
-(4) **Spécifier** le « secteur d'activité » concerné par la norme dans le champ « secteur / domaine d'activité » à l'aide de la liste déroulante proposée à cet effet ;
+(4) **Specify** the "sector of activity" concerned by the standard in the field "sector / field of activity" using the drop-down list proposed for this purpose;
 
-(5) **Spécifier** le « PRODUIT » concerné par la norme dans le champ « PRODUITS » en parcourant la liste déroulante proposée au niveau de ce champ.
+(5) **Specify** the "PRODUCT" concerned by the standard in the "PRODUCTS" field by browsing the drop-down list proposed at the level of this field.
 
-Puis,
+Then,
 
-(6) Soumettre la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou ** «Réinitialiser»**  la requête en cliquant sur la case grise au bas du formulaire.
+(6) Submit the query by clicking the green box labeled **“Search”** located at the bottom of the form or **“Reset”** the query by clicking the gray box at the bottom of the form.
 
 ```
 1.  **Recherche des données relatives aux points d'information**
@@ -356,39 +353,39 @@ Puis,
 <!-- -->
 ```
 
-(1) **Sélectionner** « Points d'information » à l'aide d'une liste déroulante, dans le champ «Type de données recherchées ».
+(1) **Select** "Information points" using a drop-down list, in the "Type of data sought" field.
 
-N.B. Le champ **« Type de données recherchées »** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account
 
-Affinez votre recherche :
+Refine your search:
 
-(2) **Sélectionner** le «Type de règlement technique» à l'aide d'une liste déroulante dans le champ intitulé «Type de règlement technique» ; Quelques exemples de «types de règlement technique proposés» : Arrêté national, Décret national, Loi nationale, Règlement / Directive Communautaire ;
+(2) **Select** the “Technical Regulation Type” using a drop-down list in the field titled “Technical Regulation Type”; Some examples of “types of technical regulation proposed”: National Order, National Decree, National Law, Community Regulation / Directive;
 
-(3) Spécifier le « secteur d'activité » concerné dans le champ « secteur / domaine d'activité » à l'aide de la liste déroulante proposée à cet effet ;
+(3) Specify the "sector of activity" concerned in the field "sector / field of activity" using the drop-down list provided for this purpose;
 
-Puis**,**
+Then**,**
 
-(4) **Soumettre** la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou ** «Réinitialiser»** la requête en cliquant sur la case grise au bas du formulaire.
+(4) **Submit** the request by clicking on the green box labeled **“Search”** located at bottom of the form or "Reset" the query by clicking the gray box at the bottom of the form.
 
 ```
 1.   **Recherche des données relatives aux règlements techniques**
 ```
 
-Le processus de recherche des données relatives aux règlements techniques est le suivant :
+The search process for technical regulations data is as follows:
 
-(1) **Sélectionner** « Règlementation technique » à l'aide d'une liste déroulante, dans le champ « Type de données recherchées ».
+(1) **Select** "Technical regulations" using a drop-down list, in the "Type of data sought" field.
 
-N.B. Le champ **« Type de données recherchées »** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte.
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account.
 
-Affinez votre recherche :
+Refine your search:
 
-(2) **Sélectionner** le «Type de règlement technique » à l'aide d'une liste déroulante dans le champ intitulé «Type de règlement technique» ; Quelques exemples de «types de règlement technique proposés» : Arrêté national, Décret national, Loi nationale, Règlement / Directive ; Règlement / Directive ;
+(2) **Select** the “Technical Regulation Type” using a drop-down list in the field titled “Technical Regulation Type”; Some examples of “proposed types of technical regulation”: National Order, National Decree, National Law, Regulation / Directive; Regulation / Directive;
 
-(3) **Spécifier** le «secteur d'activité» concerné dans le champ «secteur/domaine d'activité » à l'aide de la liste déroulante proposée à cet effet ;
+(3) **Specify** the "sector of activity" concerned in the "sector/area of activity" field using the drop-down list provided for this effect ;
 
-Puis,
+Then,
 
-(4) **Soumettre** la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou ** «Réinitialiser»**  la requête en cliquant sur la case grise au bas du formulaire.
+(4) **Submit** the request by clicking on the green box labeled **"Search"** located at bottom of the form or "Reset" the query by clicking the gray box at the bottom of the form.
 
 ```
 1.  **Recherche des données relatives à la politique qualité**
@@ -398,134 +395,131 @@ Puis,
 <!-- -->
 ```
 
-(1) **Sélectionner** «Politique qualité» à l'aide d'une liste déroulante, dans le champ «Type de données recherchées ».
+(1) **Select** “Quality policy” using a drop-down list, in the “Type of data sought” field.
 
-N.B. Le champ **«Type de données recherchées»** est obligatoire et ne doit pas rester vide pour que la recherche soit prise en compte.
+N.B. The field **“Type of data sought”** is mandatory and must not be left empty for the search to be taken into account.
 
-Affinez votre recherche :
+Refine your search:
 
-(2) **Sélectionner** le « secteur d'activité » concerné par la politique qualité dans le champ «secteur / domaine d'activité » à l'aide de la liste déroulante proposée à cet effet ;
+(2) **Select** the "sector of activity" concerned by the quality policy in the "sector / field of activity" field using the list drop-down list proposed for this purpose;
 
-Puis**,**
+Then**,**
 
-(3) **Soumettre** la requête en cliquant sur la case verte intitulée «**Rechercher**» situé au bas du formulaire ou ** «Réinitialiser»**  la requête en cliquant sur la case grise au bas du formulaire.
+(3) **Submit** the query by clicking on the green box labeled “**Search**” located at bottom of the form or "Reset" the query by clicking the gray box at the bottom of the form.
 
-1. **Recherche des données relatives aux membres de comité régional**
+1. **Finding Area Committee Membership Data**
 
 ```{=html}
 <!-- -->
 ```
 
-(1) **Spécifier** dans le champ «PAYS», la Mauritanie ou
+(1) **Specify** in the “COUNTRY” field, Mauritania or
 
-(2) **Sélectionner** «Membre de comité» à l'aide d'une liste déroulante, dans le champ «Type de données recherchées».
+(2) **Select** "Committee member" using a drop-down list, in the "Type of data sought" field.
 
-> N.B. la spécification du champ **«Type de données recherchées»** est obligatoire. Ce champ ne doit pas rester vide pour que la recherche soit prise en compte.
+> N.B. the specification of the field **“Type of data sought”** is mandatory. This field must not remain empty for the search to be taken into account.
 
-Affinez votre recherche :
+Refine your search:
 
-(3) **Spécifier** le « comité régional » dans le champ «Comité régional en rapport avec la qualité» à l'aide de la liste déroulante comportant les comités régionaux en rapport avec la qualité ;
+(3) **Specify** the “regional committee” in the field “Regional committee related to quality” using the drop-down list containing the regional committees in relation to quality;
 
-(4) **Spécifier** la «Position du membre» dans le champ «Position dans un comité» à l'aide de la liste déroulante proposée au niveau de ce champ ; les positions possibles sont : membre, président, vice- président ou secrétaire ;Puis**,**
+(4) **Specify** the "Member's position" in the "Position in a committee" field using the drop-down list proposed at the level of this field; possible positions are: member, president, vice-president or secretary;Then**,**
 
-(5) **Soumettre** la requête en cliquant sur la case verte intitulée **«Rechercher»** situé au bas du formulaire ou ** «Réinitialiser»** la requête en cliquant sur la case grise au bas du formulaire.
+(5) **Submit** the request by clicking on the green box labeled **“Search”** located at bottom of the form or "Reset" the query by clicking the gray box at the bottom of the form.
 
 ```
 1.  # Résultats de recherche sur les données QUALITE
 ```
 
-Les résultats de la demande ou recherche sont affichés dans la partie juxtaposée au formulaire de recherche. Cette partie s'affiche en vert lorsque des résultats de la requête lancée sont présentés et demeure gris lorsqu'aucun résultat n'a été trouvé. Ils sont affichés par séries et le nombre total dépend de la spécification faite préalablement au niveau de la recherche. Les résultats sont aussi affichés en fonction de la pertinence de la recherche et regroupés lors de la requête. Chaque résultat inclut une vue d'ensemble des informations des métadonnées disponibles sur le type de recherche ou variable (filtre de requête) spécifié. Les figures ci-après illustrent quelques résultats de recherche.
+The results of the request or search are displayed in the part juxtaposed to the search form. This part is displayed in green when the results of the query launched are presented and remains gray when no result has been found. They are displayed by series and the total number depends on the specification made beforehand at the research level. The results are also displayed according to the relevance of the search and grouped during the query. Each result includes an overview of available metadata information about the specified search type or variable (query filter). The figures below illustrate some research results.
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran _resultat
-laboratoire.jpg](./media/image19.jpeg){width="6.299305555555556in" height="4.0545745844269465in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>_result<br>laboratory.jpg](./media/image19.jpeg){width="6.299305555555556in" height="4.0545745844269465in"}
 
-Figure 13 : Résultat d'une recherche sur les laboratoires
+Figure 13: Result of a search on laboratories
 
-Sur la figure ci-dessus, la partie grise nous indique la requête lancée : rechercher dans la base de données MAUQUIB tous les LABORATOIRES D'ANALYSE / D'ETALONNAGE. Autrement dit, nous cherchons dans la base de données, les laboratoires d'analyse / étalonnage public, semi public et privé de la Mauritanie. Les résultats de cette requête sont affichés dans la zone verte. La figure 13 ci-dessus nous indique pour le premier résultat :
+In the figure above, the gray part indicates the query launched: search the MAUQUIB database for all ANALYSIS / CALIBRATION LABORATORIES. In other words, we are looking in the database for public, semi-public and private analysis/calibration laboratories in Mauritania. The results of this query are displayed in the green area. Figure 13 above tells us for the first result:
 
-(1) En entête du résultat, la nature de la requête : Laboratoire d'analyse / d'étalonnage ;
+(1) In the header of the result, the nature of the request: Analysis / calibration laboratory;
 
-(2) Le nom du laboratoire suivi du pays d'implantation : **Laboratoire de l'Institut National de Recherche en Santé Publique (INRSP), Mauritanie** ;
+(2) The name of the laboratory followed by the country of establishment: **Laboratory of the National Institute for Public Health Research (INRSP), Mauritania**;
 
-(3) L'accréditation ou non, la certification ou non du laboratoire (champ en orange : **Non accréditée** **Non accréditée**) suivi du type d'organisme (champ en bleue : Publique) ;
+(3) Accreditation or not, certification or not of the laboratory (field in orange: **Not accredited** **&nbsp;Not accredited**) followed by the type of organization (field in blue: Public);
 
-(4) Les informations concernant les adresses du laboratoire (Téléphone, Email, Adresse/Localisation, site web, Autres contacts) ;
+(4) Information concerning the addresses of the laboratory (Telephone, Email, Address/Location, website, Other contacts);
 
-(5) Voir plus : en cliquant sur la flèche noire ► ou sur le groupe de mots « **voir plus** », vous avez d'autres informations disponibles sur le laboratoire (le secteur d'activité du laboratoire, les produits analysés, paramètres analysés par produit analysé, les normes utilisées, etc.). En cliquant de nouveau sur le flèche noire pointe en bas ▼, vous refermez les différentes informations vues précédemment.
+(5) See more: by clicking on the black arrow ► or on the group of words "**see more**", you have other information available on the laboratory (the laboratory's sector of activity, the products analysed, parameters analyzed by product analysed, the standards used, etc.). By clicking again on the black arrow pointing down ▼, you close the various information seen previously.
 
 ```
 1.  # Recherche des données INDUSTRIE
 ```
 
-Les données INDUSTRIE qui peuvent être consultées dans la base de données ECOQUIB concernent les : (i) table B1 : Principales productions en volume (tonne) et Prix aux producteurs (monnaie locale/kg), (ii) table B2 : Exportations &amp; importations par produits du Système Harmonise (SH), en valeurs (million de monnaie locale) et volumes (tonne), (iii) table B3 : Orientation géographique des importations et exportations de biens, en valeurs (en million de monnaie locale) et volumes (en tonne), table B4 : (iv) Valeur ajoutée du secteur industriel aux prix courants et constants (en million d'unité monétaire locale), (v) table B5 : Indice des prix, (vi) table C1 : Principaux impôts sur sociétés et autres entreprises, (vii) table C2 : Energie et environnement et (viii) table C3 : Exonérations et catégorisation salariale.
+The INDUSTRY data that can be consulted in the ECOQUIB database concerns: (i) table B1: Main productions in volume (tonne) and producer prices (local currency/kg), (ii) table B2: Exports &amp; imports by Harmonized System (HS) products, in values (millions of local currency) and volumes (tonnes), (iii) table B3: Geographical orientation of imports and exports of goods, in values (millions of local currency) and volumes (in ton), table B4: (iv) Added value of the industrial sector at current and constant prices (in millions of local currency units), (v) table B5: Price index, (vi) table C1: Main taxes on corporations and other companies, (vii) table C2: Energy and environment and (viii) table C3: Exemptions and salary categorization.
 
-1. **Recherche des données relatives à la table 1 : Principales productions en volume (tonne) et Prix aux producteurs (monnaie locale/kg)**
+1. **Search for data relating to table 1: Main productions in volume (tonne) and Price to producers (local currency/kg)**
 
-La recherche des données relatives aux principales productions (en volume) et des Prix aux producteurs (monnaie locale / kg) se fait à l'aide d'un formulaire qui comporte trois (03) champs. Le processus de recherche est le suivant :
+The search for data relating to the main productions (in volume) and prices to producers (local currency / kg) is done using a form which includes three (03) fields. The search process is as follows:
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de MAUQUIB;
+(1) **Click** on “view industry data” in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table B1 pour avoir le formulaire de requête ;
+(2) **Click** on table B1 to get the query form;
 
-(3) **Choisir** « les produits » à l'aide d'une liste déroulante, dans le champ « Produits ». Vous ne pouvez pas choisir plus de quinze (15) produits à la fois ; Toutefois vous pouvez choisir toute la table B1 ;
+(3) **Choose** “the products” using a drop-down list, in the “Products” field. You may not choose more than fifteen (15) products at a time; However you can choose the whole table B1;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020 ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
-(5) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur «REINITIALISER» pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or “RESET” to resume your search;
 
-(6) **Cliquer** sur « INDUSTRIE » dans la barre de titre de la table (barre en couleur grise) pour revenir sur toutes les tables industries ou sur « ACCUEIL » pour revenir sur la page d'accueil de MAUQUIB.
+(6) **Click** on "INDUSTRY" in the title bar of the table (bar in gray color) to return to all the industry tables or on "HOME" to return to the MAUQUIB homepage.
 
 ![](./media/image20.png){width="5.144267279090114in" height="1.9848501749781278in"}
 
-> Figure 14 : Formulaire de recherche des données sur la production
+> Figure 14: Production data search form
 >
-> et les prix
+> and prices
 
-1. **Recherche des données relatives à la table 2 : Exportations &amp; importations par produits du Système Harmonise (SH)**
+1. **Search for data relating to table 2: Exports &amp; imports by Harmonized System (HS) products**
 
-La recherche des données relatives aux Exportations &amp; importations par produits du Système Harmoniser (SH) se fait à l'aide d'un formulaire qui comporte trois (03) champs. Le processus de recherche est le suivant :
+The search for data relating to Exports &amp; Imports by products of the Harmonized System (HS) is done using a form with three (03) fields. The search process is as follows:
 
-(1) **Cliquer** sur «voir les données industrie» dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view industry data” in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table B2 intitulée «Exportations &amp; importations par produits du Système Harmoniser (SH) » pour avoir le formulaire de requête ;
+(2) &lt;strong data-md-type="double_emphasis"&gt;Click&lt;/strong&gt; on table B2 entitled “Exports &amp; imports by Harmonized System (HS) products” to get the request form;
 
-(3) **Choisir** «les produits» à l'aide d'une liste déroulante, dans le champ «Produits» ; Vous ne pouvez pas choisir plus de quinze (15) produits à la fois ;
+(3) **Choose** “the products” using a drop-down list, in the “Products” field; You may not choose more than fifteen (15) products at a time;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2019 ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2019 respectively;
 
-(5) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
 
-(6) **Cliquer** sur « INDUSTRIE » dans la barre de titre de la table (barre en couleur grise) pour revenir sur toutes les tables industries ou sur « ACCUEIL » pour revenir sur la page d'accueil d'ECOQUIB Rev 1.
+(6) **Click** on "INDUSTRY" in the title bar of the table (bar in gray color) to return to all the industry tables or on "HOME" to return to the ECOQUIB Rev 1 home page.
 
-La figure n°15 ci-après illustre le formulaire de recherche au niveau de la table B2.
+Figure 15 below illustrates the search form at table B2.
 
 ![](./media/image21.png){width="5.672910104986877in" height="2.2246708223972003in"}
 
-Figure 15 : Formulaire de recherche des importations et exportations par produits du Système Harmonisé (SH)
+Figure 15: Search form for imports and exports by Harmonized System (HS) product
 
-1. **Recherche des données relatives à la table 3 : Orientation géographique des importations et exportations de biens, en valeurs (en million de monnaie locale) et volumes (en tonne)**
+1. **Search for data relating to table 3: Geographical orientation of imports and exports of goods, in value (in millions of local currency) and volumes (in tonnes)**
 
-La recherche des données relatives à la table B3 intitulée « Orientation géographique des importations et exportations de biens, en valeurs (en million de monnaie locale) et volumes (en tonne) » est faite à partir du formulaire de recherche illustré par la figure ci-dessous.
+The search for data relating to table B3 entitled "Geographical orientation of imports and exports of goods, in value (in millions of local currency) and volumes (in tonnes)" is made using the search form illustrated in the figure below. below.
 
-![](./media/image22.png){width="5.666666666666667in" height="3.0444444444444443in"}
+![](./media/image22.png){width="5.66666666666667in" height="3.0444444444444443in"}
 
-Figure 16 : Formulaire de recherche sur la table B3 : Orientation géographique des importations et des exportations
+Figure 16: Search form on table B3: Geographic orientation of imports and exports
 
-Le processus de recherche est le suivant :
+The search process is as follows:
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view industry data” in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table B3 intitulée «Orientation géographique des importations et exportations de biens, en valeurs (en million de monnaie locale) et volumes (en tonne)» pour avoir le formulaire de requête ci-dessus ;
+(2) **Click** on table B3 entitled "Geographical orientation of imports and exports of goods, in value (in millions of local currency) and volumes (in tons) to get the request form above;
 
-(3) **Choisir** dans le champ «VARIABLES», la zone ou les pays de destination des importations et exportations du pays choisi, à l'aide d'une liste déroulante ; Vous ne pouvez pas choisir plus de quinze (15) pays à la fois ;
+(3) **Choose** in the "VARIABLES" field, the area or countries of destination for imports and exports of the chosen country, using a list drop-down; You may not choose more than fifteen (15) countries at a time;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020 ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
-(5) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
 
-(6) **Cliquer** sur « INDUSTRIE » dans la barre de titre de la table (barre en couleur grise) pour revenir sur toutes les tables industries ou sur «ACCUEIL» pour revenir sur la page d'accueil de la plateforme MAUQUIB.
+(6) **Click** on "INDUSTRY" in the title bar of the table (bar in gray color) to return to all the industry tables or on "HOME" to return to the home page of the MAUQUIB platform.
 
 ```
 1.   **Recherche des données relatives à la table 4 : Valeur ajoutée
@@ -533,55 +527,55 @@ Le processus de recherche est le suivant :
     d\'unité monétaire locale)**
 ```
 
-Le processus de recherche des données relatives à la **Valeur Ajoutée du secteur industriel aux prix courant et constant** est le suivant :
+The process for finding **Industrial Value Added at current and constant prices** data is as follows:
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de MAUQUIB ;
+(1) **Click** on “view industry data” in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table B4 intitulée « Valeur ajoutée du secteur industriel aux prix courants et constants (en million d'unité monétaire locale » pour avoir accès au formulaire de requête sur les données Valeur Ajoutée ;
+(2) **Click** on table B4 entitled "Added value of the industrial sector at current and constant prices (in million local currency units") to access the form query on Value Added data;
 
-(3) **Choisir** la statistique souhaitée dans le champ «VARIABLES», à l'aide d'une liste déroulante ; vous avez la possibilité de choisir toutes les variables en choisissant «Tous» ou choisir au plus quinze (15) variables en simultanée;
+(3) **Choose** the desired statistic in the "VARIABLES" field, using a drop-down list; you have the possibility of choosing all the variables by choosing “All” or choosing at most fifteen (15) variables simultaneously;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020 ;
-
-```{=html}
-<!-- -->
-```
-
-(7) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
 ```{=html}
 <!-- -->
 ```
 
-(5) **Cliquer** sur « INDUSTRIE » dans la barre de titre de la table (barre en couleur grise) pour revenir sur toutes les tables industries ou sur « ACCUEIL » pour revenir sur la page d'accueil de la MAUQUIB.
+(7) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
+
+```{=html}
+<!-- -->
+```
+
+(5) **Click** on "INDUSTRY" in the title bar of the table (bar in gray color) to return to all the industry tables or on "HOME" to return to the MAUQUIB home page.
 
 ```
 1.  **Recherche des données relatives à la table 5 :**
 ```
 
-> **Indice des prix**
+> **Price index**
 
-La procédure de recherche des données sur les **Indices des prix** est la suivante :
+The procedure for finding **Price Indices** data is as follows:
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de l a MAUQUIB ;
+(1) **Click** on "see industry data" in the central area of the MAUQUIB home page;
 
-(2) **Cliquer** sur la table B5 intitulée « **Indice des prix** » pour avoir accès au formulaire de requête sur les données de la table B5 **Indices des prix** ;
+(2) **Click** on table B5 entitled "**Price index**" to access the query form on data from table B5 **Price indices**;
 
-(3) **Choisir** la statistique ou le type d'indice souhaitée dans le champ « VARIABLES », à l'aide d'une liste déroulante ; Vous avez la possibilité de choisir toutes les variables en choisissant « Tous » ou choisir au plus quinze (15) variables de façon spécifique et en simultanée ;
+(3) **Choose** the desired statistic or index type in the "VARIABLES" field, using a drop-down list; You have the option of choosing all the variables by choosing “All” or choosing at most fifteen (15) variables specifically and simultaneously;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020 ;
-
-```{=html}
-<!-- -->
-```
-
-(8) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
 ```{=html}
 <!-- -->
 ```
 
-(5) **Cliquer** sur «INDUSTRIE» dans la barre de titre de la table (barre en couleur grise) pour revenir sur toutes les tables industries ou sur «ACCUEIL» pour revenir sur la page d'accueil de la plateforme MAUQUIB.
+(8) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
+
+```{=html}
+<!-- -->
+```
+
+(5) **Click** on "INDUSTRY" in the title bar of the table (bar in gray color) to return to all the industry tables or on "HOME" to return to the home page of the MAUQUIB platform.
 
 ```
 1.  **Recherche des données relatives à la table C1 : Taux
@@ -589,646 +583,636 @@ La procédure de recherche des données sur les **Indices des prix** est la suiv
     industriel**
 ```
 
-La recherche des données relatives à la table C1 intitulée « Principaux impôts sur sociétés et autres entreprises » est faite à partir du formulaire de recherche illustré par la figure ci-dessous.
+The search for data relating to table C1 entitled "Main taxes on corporations and other businesses" is made using the search form illustrated in the figure below.
 
 ![](./media/image23.png){width="5.911111111111111in" height="2.7111111111111112in"}
 
-Figure 17 : Formulaire de recherche sur la table C1 : Principaux Impôts aux sociétés et autres entreprises
+Figure 17: Search form on table C1: Main taxes on corporations and other businesses
 
-La procédure de recherche des données sur les Principaux impôts sur sociétés et autres entreprises est la suivante :
+The procedure for researching data on the Main taxes on corporations and other businesses is as follows:
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de la MAUQUIB ;
+(1) **Click** on "see industry data" in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table C1 intitulée «Principaux impôts sur sociétés et autres entreprises» pour avoir accès au formulaire de requête sur les données de la table C1 ;
+(2) **Click** on table C1 entitled "Main taxes on corporations and other businesses" to access the query form on the data of table C1;
 
-(3) **Choisir** la statistique ou le type de variable souhaitée dans le champ « VARIABLES », à l'aide d'une liste déroulante ; Vous avez la possibilité de choisir toutes les variables en choisissant « Tous » ou choisir au plus quinze (15) variables de façon spécifique et simultanément ;
+(3) **Choose** the desired statistic or type of variable in the "VARIABLES" field, using a drop-down list; You have the option of choosing all the variables by choosing “All” or choosing at most fifteen (15) variables specifically and simultaneously;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2019 ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2019 respectively;
 
-(5) **Cliquer** sur « **VOIR** » pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
 
-(6) **Cliquer** sur «INDUSTRIE» dans la barre de titre de la table (barre en couleur grise sur le formulaire) pour revenir sur toutes les tables industries ou sur « ACCUEIL » pour revenir sur la page d'accueil de la MAUQUIB.
+(6) **Click** on "INDUSTRY" in the title bar of the table (gray bar on the form) to return to all the industry tables or to "HOME" to return to the MAUQUIB homepage.
 
-2.3.6. Recherche des données relatives à la table C2 : Energie et Environnement
+2.3.6. Search for data relating to table C2: Energy and Environment
 
-La recherche des données relatives à la table C2 intitulée « Energie et Environnement » est faite à partir du formulaire de recherche illustré par la figure ci-dessous.
+The search for data relating to table C2 entitled "Energy and Environment" is made using the search form illustrated in the figure below.
 
 ![](./media/image24.png){width="5.711111111111111in" height="2.6in"}
 
-Figure 18 : Formulaire de recherche des données sur la table C2-- Energie et Environnement
+Figure 18: Data search form on table C2-- Energy and Environment
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de la MAUQUIB ;
+(1) **Click** on "see industry data" in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table C2 intitulée « **Energie et Environnement** » pour avoir accès au formulaire de requête sur les données de la table C2 ;
+(2) **Click** on table C2 entitled "**Energy and Environment**" to access the query form on data from table C2;
 
-> (3) **Choisir** la statistique ou le type de variable souhaitée dans le champ « VARIABLES », à l'aide d'une liste déroulante ; Vous avez la possibilité de choisir toutes les variables en choisissant « Tous » ou choisir au plus quinze (15) variables de façon spécifique ;
+> (3) **Choose** the desired statistic or type of variable in the "VARIABLES" field, using a drop-down list; You have the possibility to choose all the variables by choosing “All” or to choose at most fifteen (15) variables in a specific way;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020 ;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
-![](./media/image25.png){width="5.6in" height="2.8666666666666667in"}
+![](./media/image25.png){width="5.6in" height="2.866666666666667in"}
 
-Figure 19 : Formulaire de recherche des données sur la table C3 Exonérations et catégorisation salariale du secteur industriel
+Figure 19: Form to search for data on table C3 Exemptions and wage categorization in the industrial sector
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de la MAUQUIB;
+(1) **Click** on "see industry data" in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table C3 intitulée « Exonérations et &gt; catégorisation salariale du secteur industriel » pour avoir accès &gt; au formulaire de requête sur les données de la table C3 ;
+(2) &lt;strong data-md-type="double_emphasis"&gt;Click&lt;/strong&gt; on table C3 entitled "Exemptions and &gt; wage categorization of the industrial sector" to access &gt; the query form on the data of table C3 ;
 
-(3) **Choisir** la statistique ou le type de variable souhaitée dans le champ « VARIABLES », à l'aide d'une liste déroulante ; Vous avez la possibilité de choisir toutes les variables en choisissant « Tous » ou choisir au plus quinze (15) variables de façon spécifique ;
+(3) **Choose** the desired statistic or type of variable in the "VARIABLES" field, using a drop-down list; You have the possibility to choose all the variables by choosing “All” or to choose at most fifteen (15) variables in a specific way;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
-(5) **Cliquer** sur «**VOIR** » pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
 
-(6) **Cliquer** sur «INDUSTRIE» dans la barre de titre de la table (barre en couleur grise sur le formulaire) pour revenir sur toutes les tables industries ou sur cliquer sur «ACCUEIL» pour revenir sur la page d'accueil de la MAUQUIB.
+(6) **Click** on "INDUSTRY" in the title bar of the table (gray bar on the form) to return to all the industry tables or to click on "HOME" to return to the MAUQUIB home page.
 
 ```
 1.  # Résultats de recherche sur les données INDUSTRIE
 ```
 
-Les résultats de la demande ou recherche sont affichés dans la partie grise du formulaire de recherche. A défaut, cette partie affiche le message « **Aucun élément ne correspond à votre recherche** » ou lorsqu'aucun résultat de recherche n'a été trouvé. Les résultats sont affichés sous forme de tableau dont la taille (nombre de lignes et nombre de colonnes) dépend de la spécification faite préalablement au niveau de la recherche. Les résultats sont aussi affichés en fonction de la pertinence de la recherche spécifiée lors de la requête. Les figures ci-après illustrent quelques résultats de recherche.
+The results of the request or search are displayed in the gray part of the search form. Otherwise, this part displays the message “**No element corresponds to your search**” or when no search results were found. The results are displayed in the form of a table whose size (number of rows and number of columns) depends on the specification made beforehand at the search level. The results are also displayed according to the relevance of the search specified during the query. The figures below illustrate some research results.
 
-(1) **Cliquer** sur « voir les données industrie » dans la zone centrale de la page d'accueil de la MAUQUIB;
+(1) **Click** on "see industry data" in the central area of the MAUQUIB homepage;
 
-(2) **Cliquer** sur la table B2.
+(2) **Click** on table B2.
 
-(3) **Choisir** la statistique ou le type de variable souhaitée dans le champ « VARIABLES », à l'aide d'une liste déroulante ; Vous avez la possibilité de choisir toutes les variables en choisissant « Tous » ou choisir au plus quinze (15) variables de façon spécifique ;
+(3) **Choose** the desired statistic or type of variable in the "VARIABLES" field, using a drop-down list; You have the possibility to choose all the variables by choosing “All” or to choose at most fifteen (15) variables in a specific way;
 
-(4) **Spécifier** les périodes de début et de fin des séries recherchées à l'aide d'une liste déroulante proposée à cet effet. Par défaut, les périodes de début et de fin proposées au niveau du formulaire sont respectivement 2000 et 2020;
+(4) **Specify** the start and end periods of the series sought using a drop-down list provided for this purpose. By default, the start and end periods proposed at the form level are 2000 and 2020 respectively;
 
-(5) **Cliquer** sur «**VOIR**» pour valider votre recherche en bas de la page de formulaire de requête ou sur **«REINITIALISER»** pour reprendre votre recherche ;
+(5) **Click** on "**SEE**" to validate your search at the bottom of the query form or **“RESET”** to resume your search;
 
-(6) **Cliquer** sur « INDUSTRIE» dans la barre de titre de la table (barre en couleur grise sur le formulaire) pour revenir sur toutes les tables industries ou sur cliquer sur «ACCUEIL» pour revenir sur la page d'accueil de la MAUQUIB.
+(6) **Click** on "INDUSTRY" in the title bar of the table (gray bar on the form) to return to all the industry tables or to click on "HOME" to return to the MAUQUIB home page.
 
-(7) ![](./media/image26.png){width="5.835416666666666in" height="2.75in"} Figure 21 : Résultat issu d'une recherche sur la table B1 -- Volume de production
+(7) ![](./media/image26.png){width="5.835416666666666in" height="2.75in"} Figure 21: Result from 'a search on table B1 -- Production volume
 
-Figure 20 : Résultat d'une recherche sur la table B1 -- Production
+Figure 20: Result of a search on table B1 -- Production
 
-Sur la figure ci-dessus, la requête lancée est de « trouver pour la COTE D'IVOIRE, les données relatives à la production en volume (exprimée en tonne) et aux prix (en monnaie locale /kg) de sept (07) produits choisis (ANANAS, BANANES, MANIOC, OIGNONS, PATATES DOUCES, NOIX DE CAJOUX et PLANTAIN) sur la période de 2000 à 2019 ». Après avoir cliqué sur voir, nous obtenons les résultats présentés dans le tableau intitulé « B11 Productions agricoles » comme l'indique sur la figure. Cet intitulé dépend des groupes des données recherchées. Ce tableau contient de la gauche vers droite la colonne de CODE de la variable, celles des noms des VARIABLES sélectionnées et celles des données par années de recherche spécifiées lors de la requête. Chacune des lignes du tableau présente les résultats par variable sélectionnée et sont classées dans l'ordre alphabétique de A à Z. Les résultats affichés dans le tableau concernent uniquement les variables dont au moins une des données relatives à la période spécifiée dans la requête, existe dans la base de données. Ainsi, sur les sept variables sélectionnées, les données existent pour cinq variables (ANANAS, BANANES, NOIX DE CAJOUX, OIGNONS et PLANTAIN). Par contre, aucune donnée n'est disponible pour les deux variables MANIOC et PATAES DOUCES pour la période de 2000 à 2019.
+In the figure above, the query launched is to "find for COTE D'IVOIRE, data relating to production in volume (expressed in tonnes) and prices (in local currency / kg) of seven (07) products selected (PINEAPPLE, BANANAS, CASSAVA, ONIONS, SWEET POTATOES, CASHEW NUTS and PLANTAIN) over the period from 2000 to 2019”. After clicking on view, we obtain the results presented in the table entitled “B11 Agricultural production” as shown in the figure. This title depends on the groups of data sought. This table contains, from left to right, the CODE column of the variable, those of the names of the VARIABLES selected and those of the data by search years specified during the query. Each of the rows of the table presents the results for each variable selected and are classified in alphabetical order from A to Z. The results displayed in the table concern only the variables for which at least one of the data relating to the period specified in the query exists. in the database. Thus, of the seven variables selected, data exist for five variables (PINEAPPLE, BANANAS, CASHEW NUTS, ONIONS and PLANTAIN). On the other hand, no data is available for the two variables CASSAVA and SWEET POTATO for the period from 2000 to 2019.
 
-> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}Par défaut, les données relatives à la production en volume sont affichées dans le tableau (case active juste en bas du titre du tableau). Et l'affichage de toutes les données relatives à la période spécifiée dépend de l'écran sur lequel s'affichent les résultats. Sur la figure ci-dessus, les données couvrent la période 2000 à 2014. Pour voir les informations des périodes de 2015 à 2019, cliquer sur la flèche &gt; située à droite de la barre grise au bas du tableau des résultats puis cliquer sur &lt; pour revenir en arrière.
+> &lt;img src="./media/image27.png" alt="" data-md-type="image"&gt;{width="0.3541655730533683in" height="0.2465277777777778in"}By default, production data in volume are displayed in the table (active box just below the title of the table). And the display of all data for the specified period depends on the screen on which the results are displayed. In the figure above, the data covers the period 2000 to 2014. To see the information for the periods from 2015 to 2019, click on the arrow &gt; located to the right of the gray bar at the bottom of the table of results then click on &lt; to go back.
 >
-> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}Vous avez la possibilité d'exporter les résultats de votre recherche. Pour cela, cliquer sur **« Exporter »** en haut de la colonne des codes.
+> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}You have the option to export the results of your search. To do this, click on **"Export"** at the top of the code column.
 >
-> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}Vous avez aussi la possibilité de voir une évolution des volumes des différents produits sélectionnés et dont les résultats sont présentés dans le tableau de la figure .... Pour cela, cliquer sur « **Evolution du volume** ». Vous obtenez le graphique de la figure ci-après.
+> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}You also have the possibility to see an evolution volumes of the different products selected and whose results are presented in the table in the figure .... To do this, click on "**Evolution of volume**". You get the graph in the figure below.
 
 ![](./media/image28.png){width="5.102083333333334in" height="2.2484569116360453in"}
 
-Figure 21 : Evolution des volumes
+Figure 21: Evolution of volumes
 
-> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}Pour obtenir les données sur les prix (monnaie locale / kg) des produits spécifiés et dont les productions en volume (en tonne) sont affichées, cliquer sur « **Prix** ». Vous obtenez un tableau qui a la même structure que celui obtenir au niveau des données concernant les volumes des mêmes produits spécifiés (ici : ANANAS, BANANES, NOIX DE CAJOUX et PLANTAIN). Ce tableau ci-après :
+> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}To get price data (currency local / kg) of the specified products and whose productions in volume (in tons) are displayed, click on "**Price**". You obtain a table which has the same structure as that obtained at the data level concerning the volumes of the same specified products (here: PINEAPPLE, BANANAS, CASHEW NUTS and PLANTAIN). This table below:
 
 ![](./media/image30.png){width="5.872222222222222in" height="2.945813648293963in"}
 
-Figure 22 : Résultat d'une recherche sur la table B1 -- Prix de la production
+Figure 22: Result of a search on table B1 -- Production price
 
-Vous avez aussi la possibilité de voir une évolution des prix des différents produits sélectionnés et dont les résultats sont présentés dans le tableau de la figure .... Pour cela, cliquer sur « **Evolution du prix** ».
+You also have the possibility of seeing an evolution of the prices of the various selected products and whose results are presented in the table of the figure .... To do this, click on "**Evolution of the price**”.
 
-> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}Vous avez la possibilité d'exporter les résultats de votre recherche sur les prix. Pour cela, cliquer sur
+> ![](./media/image27.png){width="0.3541655730533683in" height="0.2465277777777778in"}You have the option to export the results of your price research. To do this, click on
 >
-> **« Exporter »** en haut de la colonne des codes.
+> **"Export"** at the top of the codes column.
 
-# III. FONCTIONNEMENT DE LA BASE DE DONNEES MAUQUIB : Saisie des données qualité et importation des données industrie dans la base
+# III. OPERATION OF THE MAUQUIB DATABASE: Entry of quality data and import of industry data into the database
 
-Dans cette partie, nous abordons les manières d'alimenter la base en données qualité et industrie. Les données qualité sont saisies directement dans l'application MAUQUIB, par contre les données industrie sont renseignées dans une maquette sous format EXCEL puis importer dans l'application.
+In this part, we discuss the ways to supply the database with quality and industry data. The quality data is entered directly into the MAUQUIB application, on the other hand the industry data is entered in a model in EXCEL format and then imported into the application.
 
-# Saisie des données qualité
+# Entering quality data
 
-La saisie des données qualité se fait directement en ligne. Elle est strictement réservée aux administrateurs. Les lignes suivantes décrivent le processus de saisie des différentes métadonnées relatives à la qualité.
+The entry of quality data is done directly online. It is strictly reserved for administrators. The following lines describe the process of entering the various quality-related metadata.
 
-1. **Cliquer sur saisie de données** en bas sur la page d'accueil de la MAUQUIB ;
+1. **Click on data entry** at the bottom of the MAUQUIB home page;
 
-2. ![](./media/image33.png){width="4.152777777777778in" height="2.1527777777777777in"}**Saisir votre identifiant** dans la première case puis votre **code d'authentification** dans la seconde case et **valider** en cliquant sur **sign up** (champ en vert) ;
+2. ![](./media/image33.png){width="4.152777777777778in" height="2.1527777777777777in"}<strong data-md-type=" double_emphasis">Enter your username</strong> in the first box then your **authentication code** in the second box and <strong data-md-type=" double_emphasis">validate</strong> by clicking on **sign up** (field in green);
 
-Figure 23 : Capture d'écran de connexion à la partie saisie des
+Figure 23: Screenshot of connection to the data entry part
 
-données de MAUQUIB
+MAUQUIB data
 
-Après cette étape, l'application MAUQUIB vous présente la page de menu de navigation des saisies des données dans la base. Le menu de navigation est situé à gauche de la page tandis que les langues de navigation sont présentées dans le coin supérieur droit de la page. Les trois langues de navigation de la page d'accueil de la base de données MAUQUIB sont aussi proposées ici pour la saisie des données et celle par défaut est le **FRANCAIS**.
+After this step, the MAUQUIB application presents you with the navigation menu page for data entry in the database. The navigation menu is located on the left side of the page while the navigation languages are presented in the upper right corner of the page. The three navigation languages of the MAUQUIB database home page are also offered here for data entry and the default is **ENGLISH**.
 
 ![](./media/image34.png){width="6.299305555555556in" height="4.1641240157480315in"}
 
-Figure 24 : Capture d'écran de la page de navigation de saisie des données qualité dans la base MAUQUIB
+Figure 24: Screenshot of the navigation page for entering quality data in the MAUQUIB database
 
-Sur la page de navigation de saisie des données, le menu est présenté à gauche et le paramétrage des langues est situé dans le coin supérieur droit de la page. Le menu de navigation de saisie comporte quatre (04) thèmes qui ont des sous thèmes (variables). Les thèmes proposés sont :
+On the data entry navigation page, the menu is presented on the left and the language settings are located in the upper right corner of the page. The input navigation menu has four (04) themes that have sub-themes (variables). The proposed themes are:
 
-- Table A : Cette table possède seize (16) sous thèmes et recense toutes les données qualités ;
+- Table A: This table has sixteen (16) subtopics and lists all quality data;
 
-- Table B : elle possède huit (08) sous thèmes et englobe les données industrielle ;
+- Table B: it has eight (08) sub-themes and includes industrial data;
 
-- Autres : cette partie contient quatre (04) sous thèmes et
+- Others: this part contains four (04) sub-themes and
 
-- Mon compte : cette partie a deux (02) sous thèmes.
+- My Account: This part has two (02) sub topics.
 
-La saisie des données qualité se fait au niveau du thème Table A et tous les champs suivis d'une astérix rouge (*) sont des champs obligatoires.
+The entry of quality data is done at the level of the Table A theme and all fields followed by a red asterix (*) are mandatory fields.
 
-# Saisie des métadonnées sur les laboratoires
+# Entering laboratory metadata
 
-Dans le menu de navigation de la page de saisie, sous le thème Table A, **cliquer** sur le sous thème « LABORATOIRES ». La page des laboratoires déjà intégrés dans la base s'affiche.
+In the navigation menu of the entry page, under the Table A theme, **click** on the "LABORATORIES" sub-theme. The page of laboratories already integrated in the database is displayed.
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran page laboratoires dans la
-base.jpg](./media/image35.jpeg){width="5.713958880139982in" height="1.8825568678915137in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>screensavers page laboratories in the<br>base.jpg](./media/image35.jpeg){width="5.713958880139982in" height="1.8825568678915137in"}
 
-Figure 25 : Affichage des laboratoires déjà saisie
+Figure 25: Display of laboratories already entered
 
-Vous avez la possibilité de :
+You have the option to:
 
-- Filtrer les laboratoires : Pour cela, cliquer sur $\mathbf{Y}$ **Filtrer** dans le coin supérieur droit et élaborer vos critères de filtres (nom du laboratoire, secteur d'activité, type de laboratoire, etc.) à l'aide des champs de listes déroulantes proposées à cet effet ;
+- Filter labs: To do this, click on $\mathbf{Y}$ **Filter** in the upper right corner and elaborate your filter criteria (lab name, sector activity, type of laboratory, etc.) using the drop-down fields provided for this purpose;
 
-- Ajouter de nouveaux laboratoires dans la base en cliquant sur **Ajouter.**
+- Add new laboratories to the database by clicking on **Add.**
 
-Cliquer sur AJOUTER et renseigner le formulaire de saisie des métadonnées sur les laboratoires comportant treize (13) champs. Les lignes suivantes présentent l'aide à la saisie des métadonnées sur les laboratoires.
+Click on ADD and complete the laboratory metadata entry form with thirteen (13) fields. The following lines present the assistance for entering metadata on the laboratories.
 
-+---+---------------+--------+-----------+---------------+-------------+ |   | Titre du      | Nature | Type de   | &gt; Définition  | &gt;           | |   | champ         | du     | champ     |               | Commentaire | |   |               | champ  |           |               |             | +===+===============+========+===========+===============+=============+ | 1 | &gt; **Nom**     | &gt;      | &gt; Champ   | &gt; Nom du      | &gt; L'       | |   |               |  Oblig | &gt; de      | &gt; laboratoire | utilisateur | |   |               | atoire | &gt; saisir  | &gt; dont on     | &gt; doit      | |   |               |        |           | &gt; veut        | &gt; obli      | |   |               |        |           | &gt; renseigner  | gatoirement | |   |               |        |           | &gt; les         | &gt; saisir le | |   |               |        |           | &gt; métadonnées | &gt; nom du    | |   |               |        |           | &gt; dans la     | &gt;           | |   |               |        |           | &gt; base. Il    | laboratoire | |   |               |        |           | &gt; s'agit     | &gt; avant de  | |   |               |        |           | &gt; d'un       | &gt; pouvoir   | |   |               |        |           | &gt; identifiant | &gt; valider   | |   |               |        |           | &gt; créé pour   | &gt; le        | |   |               |        |           | &gt; identifier  | &gt;           | |   |               |        |           | &gt; de manière  |  formulaire | |   |               |        |           | &gt; unique le   | &gt; de        | |   |               |        |           | &gt; jeu de      | &gt;           | |   |               |        |           | &gt; données à   | métadonnées | |   |               |        |           | &gt; décrire     |             | |   |               |        |           | &gt; dans la     |             | |   |               |        |           | &gt; base        |             | +---+---------------+--------+-----------+---------------+-------------+ | 2 | &gt; **Domaine   | &gt; Non  | &gt; Menu    | &gt; Secteur     |             | |   | &gt;             | &gt;      | &gt;         | &gt; d'activité  |             | |   |  d'activité** |  oblig | déroulant | &gt; du          |             | |   |               | atoire |           | &gt; laboratoire |             | |   |               |        |           | &gt; dont on     |             | |   |               |        |           | &gt; veut        |             | |   |               |        |           | &gt; renseigner  |             | |   |               |        |           | &gt; les         |             | |   |               |        |           | &gt; métadonnées |             | |   |               |        |           | &gt; dans la     |             | |   |               |        |           | &gt; base        |             | +---+---------------+--------+-----------+---------------+-------------+ | 3 | &gt; **Type      | &gt; Non  | &gt; Menu    | &gt; Caractère   |             | |   | &gt;             | &gt;      | &gt;         | &gt; public,     |             | |   | d'organisme** |  oblig | déroulant | &gt; privé ou    |             | |   |               | atoire |           | &gt; semi public |             | |   |               |        |           | &gt; du          |             | |   |               |        |           | &gt; laboratoire |             | +---+---------------+--------+-----------+---------------+-------------+ | 4 | &gt; **Structure | &gt; Non  | &gt; Champ   | &gt; Nom de la   |             | |   | &gt; officielle  | &gt;      | &gt; de      | &gt; structure   |             | |   | &gt; de          |  oblig | &gt; saisir  | &gt; chargée de  |             | |   | &gt; tutelle**   | atoire |           | &gt; contrôler   |             | |   |               |        |           | &gt; les         |             | |   |               |        |           | &gt; activités   |             | |   |               |        |           | &gt; du          |             | |   |               |        |           | &gt; laboratoire |             | +---+---------------+--------+-----------+---------------+-------------+ | 5 | &gt; **Date de   | &gt; Non  | &gt; Menu    | &gt; Indique la  | &gt; L'        | |   | &gt; création**  | &gt;      | &gt; d       | &gt; date de     | utilisateur | |   |               |  oblig | éroulante | &gt; création du | &gt; doit      | |   |               | atoire |           | &gt; laboratoire | &gt; s         | |   |               |        |           |               | électionner | |   |               |        |           |               | &gt; le jour,  | |   |               |        |           |               | &gt; le mois   | |   |               |        |           |               | &gt; et        | |   |               |        |           |               | &gt; l'année   | |   |               |        |           |               | &gt; de        | |   |               |        |           |               | &gt; création  | |   |               |        |           |               | &gt; du        | |   |               |        |           |               | &gt; l         | |   |               |        |           |               | aboratoire. | |   |               |        |           |               | &gt; Lorsque   | |   |               |        |           |               | &gt; la date   | |   |               |        |           |               | &gt; est       | |   |               |        |           |               | &gt;           | |   |               |        |           |               | incomplète, | |   |               |        |           |               | &gt; l'        | |   |               |        |           |               | utilisateur | |   |               |        |           |               | &gt; indique   | |   |               |        |           |               | &gt; 01 pour   | |   |               |        |           |               | &gt; le jour   | |   |               |        |           |               | &gt; et        | |   |               |        |           |               | &gt; janvier   | |   |               |        |           |               | &gt; pour le   | |   |               |        |           |               | &gt; mois pour | |   |               |        |           |               | &gt; que ses   | |   |               |        |           |               | &gt; données   | |   |               |        |           |               | &gt; relatives | |   |               |        |           |               | &gt; à la date | |   |               |        |           |               | &gt; soit      | |   |               |        |           |               | &gt; acceptée  | +---+---------------+--------+-----------+---------------+-------------+ | 6 | &gt; **Autres    | &gt; Non  | &gt; Champ   | &gt; Brève       | &gt; Le        | |   | &gt; activités** | &gt;      | &gt; de      | &gt; description | &gt; caractère | |   |               |  oblig | &gt; saisir  | &gt; des autres  | &gt; non       | |   |               | atoire |           | &gt; activités   | &gt;           | |   |               |        |           | &gt; menées par  | obligatoire | |   |               |        |           | &gt; le          | &gt; est en    | |   |               |        |           | &gt; laboratoire | &gt; rapport à | |   |               |        |           |               | &gt; la prise  | |   |               |        |           |               | &gt; en compte | |   |               |        |           |               | &gt; de        | |   |               |        |           |               | &gt; l'enr     | |   |               |        |           |               | egistrement | |   |               |        |           |               | &gt; des       | |   |               |        |           |               | &gt; données   | |   |               |        |           |               | &gt; saisies.  | +---+---------------+--------+-----------+---------------+-------------+ | 7 | &gt; **Adresse** | &gt; Non  | &gt; Champ   | &gt; La          |             | |   |               | &gt;      | &gt; de      | &gt;             |             | |   |               |  oblig | &gt; saisir  |  localisation |             | |   |               | atoire |           | &gt; du          |             | |   |               |        |           | &gt; laboratoire |             | |   |               |        |           | &gt; (rue,       |             | |   |               |        |           | &gt; quartier,   |             | |   |               |        |           | &gt; ville)      |             | +---+---------------+--------+-----------+---------------+-------------+ | 8 | &gt;             | Non    | &gt; Champ   | &gt; Le numéro   |             | |   | **Téléphone** | oblig  | &gt; de      | &gt; de          |             | |   |               | atoire | &gt; saisir  | &gt; téléphone   |             | |   |               |        |           | &gt; permanant   |             | |   |               |        |           | &gt; Du          |             | |   |               |        |           | &gt; laboratoire |             | +---+---------------+--------+-----------+---------------+-------------+ | &gt; | &gt; **Email**   | Non    | &gt; Champ   | &gt; Indique le  |             | |   |               | oblig  | &gt; de      | &gt; courriel    |             | | 9 |               | atoire | &gt; saisir  |               |             | +---+---------------+--------+-----------+---------------+-------------+ | &gt; | &gt; **Site      | Non    | &gt; Champ   | &gt; Indique un  |             | |   | &gt; web**       | oblig  | &gt; de      | &gt; site où     |             | | 1 |               | atoire | &gt; saisir  | &gt; sont        |             | | 0 |               |        |           | &gt;             |             | |   |               |        |           |  consultables |             | |   |               |        |           | &gt; les         |             | |   |               |        |           | &gt; activités,  |             | |   |               |        |           | &gt;             |             | |   |               |        |           |  informations |             | |   |               |        |           | &gt; relatives   |             | |   |               |        |           | &gt; au          |             | |   |               |        |           | &gt; laboratoire |             | +---+---------------+--------+-----------+---------------+-------------+ | &gt; | &gt; **Autres    | Non    | &gt; Champ   | &gt; Indique     |             | |   | &gt; contact**   | oblig  | &gt; de      | &gt; d'autres    |             | | 1 |               | atoire | &gt; saisir  | &gt; contacts    |             | | 1 |               |        |           | &gt; autres que  |             | |   |               |        |           | &gt; ceux cités  |             | |   |               |        |           | &gt; plus haut   |             | |   |               |        |           | &gt;             |             | |   |               |        |           |  (Responsable |             | |   |               |        |           | &gt; du          |             | |   |               |        |           | &gt;             |             | |   |               |        |           |  laboratoire, |             | |   |               |        |           | &gt; Fax,        |             | |   |               |        |           | &gt; télécopie,  |             | |   |               |        |           | &gt; autres      |             | |   |               |        |           | &gt; téléphones, |             | |   |               |        |           | &gt; ...)        |             | +---+---------------+--------+-----------+---------------+-------------+ | &gt; | &gt; **Produits  | &gt; Non  | &gt; Menu    | &gt; Indique les | &gt; Ce champ  | |   | &gt; analysés**  | &gt;      | &gt; d       | &gt; produits    | &gt; devient   | | 1 |               |  oblig | éroulante | &gt; sur         | &gt;           | | 2 |               | atoire |           | &gt; lesquels    | obligatoire | |   |               |        |           | &gt; portent les | &gt; dès que   | |   |               |        |           | &gt; a           | &gt; l'        | |   |               |        |           | nalyses/essai | utilisateur | |   |               |        |           | s/étalonnages | &gt; décide de | |   |               |        |           | &gt; du          | &gt;           | |   |               |        |           | &gt; laboratoire |  renseigner | |   |               |        |           |               | &gt; les       | |   |               |        |           |               | &gt; produits  | |   |               |        |           |               | &gt; analysés. | |   |               |        |           |               | &gt;           | |   |               |        |           |               | &gt; Se        | |   |               |        |           |               | &gt; référer à | |   |               |        |           |               | &gt; l'encadré | |   |               |        |           |               | &gt;           | |   |               |        |           |               |  ci-dessous | +---+---------------+--------+-----------+---------------+-------------+ | &gt; | &gt;             | &gt; Non  | &gt; Menu    | &gt; Indique les | &gt; Ce champ  | |   | certification | &gt;      | &gt; d       | &gt; différentes | &gt; devient   | | 1 |               |  oblig | éroulante | &gt; c           | &gt;           | | 3 |               | atoire |           | ertifications | obligatoire | |   |               |        |           | &gt; obtenues    | &gt; dès que   | |   |               |        |           | &gt; par la      | &gt; l'        | |   |               |        |           | &gt; structure   | utilisateur | |   |               |        |           |               | &gt; décide de | |   |               |        |           |               | &gt;           | |   |               |        |           |               |  renseigner | |   |               |        |           |               | &gt; les       | |   |               |        |           |               | &gt; cer       | |   |               |        |           |               | tifications | |   |               |        |           |               | &gt; reçues.   | |   |               |        |           |               | &gt; Se        | |   |               |        |           |               | &gt; référer à | |   |               |        |           |               | &gt; l'encadré | |   |               |        |           |               | &gt; ci-       | |   |               |        |           |               | &gt; dessous   | +---+---------------+--------+-----------+---------------+-------------+
++---+---------------+--------+-----------+-------- -------+-------------+ | | Title of | Nature | Kind of | &gt; Definition | &gt; | | | field | of | field | | Comment | | | | field | | | | +===+===============+========+============+======== =======+=============+ | 1 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Name&lt;/strong&gt; | &gt; | &gt; Field | &gt; Name of | &gt; The | | | | required | &gt; from | &gt; laboratory | user | | | | atory | &gt; enter | &gt; dont we | &gt; must | | | | | | &gt; wants | &gt; obli | | | | | | &gt; inquire | gloriously | | | | | | &gt; the | &gt; enter the | | | | | | &gt; metadata | &gt; name of | | | | | | &gt; in the | &gt; | | | | | | &gt; basis.He | laboratory | | | | | | &gt; is | &gt; before | | | | | | &gt; of a | &gt; power | | | | | | &gt; identifier | &gt; validate | | | | | | &gt; created for | &gt; the | | | | | | &gt; identify | &gt; | | | | | | &gt; in a way | form | | | | | | &gt; single the | &gt; from | | | | | | &gt; game of | &gt; | | | | | | &gt; data to | metadata | | | | | | &gt; describe | | | | | | | &gt; in the | | | | | | | &gt; basis | | +---+---------------+--------+-----------+-------- -------+-------------+ | 2 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Domain | &gt; No | &gt; Menu | &gt; Sector | | | | &gt; | &gt; | &gt; | &gt; of activity | | | | of activity&lt;/strong&gt; | obliged | pull-down | &gt; from | | | | | atory | | &gt; laboratory | | | | | | | &gt; dont we | | | | | | | &gt; wants | | | | | | | &gt; inquire | | | | | | | &gt; the | | | | | | | &gt; metadata | | | | | | | &gt; in the | | | | | | | &gt; basis | | +---+---------------+--------+-----------+-------- -------+-------------+ | 3 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Type | &gt; No | &gt; Menu | &gt; Character | | | | &gt; | &gt; | &gt; | &gt; public, | | | | of organism&lt;/strong&gt; | obliged | pull-down | &gt; private or | | | | | atory | | &gt; semi-public | | | | | | | &gt; from | | | | | | | &gt; laboratory | | +---+---------------+--------+-----------+-------- -------+-------------+ | 4 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Structure | &gt; No | &gt; Field | &gt; Name of the | | | | &gt; official | &gt; | &gt; from | &gt; structure | | | | &gt; from | obliged | &gt; enter | &gt; in charge of | | | | &gt; guardianship&lt;/strong&gt; | atory | | &gt; control | | | | | | | &gt; the | | | | | | | &gt; activities | | | | | | | &gt; from | | | | | | | &gt; laboratory | | +---+---------------+--------+-----------+-------- -------+-------------+ | 5 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Date of | &gt; No | &gt; Menu | &gt; Indicate the | &gt; The | | | &gt; creation&lt;/strong&gt; | &gt; | &gt; d | &gt; date of | user | | | | obliged | rolling | &gt; creation of | &gt; must | | | | atory | | &gt; laboratory | &gt; s | | | | | | | elect | | | | | | | &gt; the day, | | | | | | | &gt; the month | | | | | | | &gt; and | | | | | | | &gt; the year | | | | | | | &gt; from | | | | | | | &gt; creation | | | | | | | &gt; from | | | | | | | &gt; l | | | | | | | laboratory.| | | | | | | &gt; When | | | | | | | &gt; the date | | | | | | | &gt; is | | | | | | | &gt; | | | | | | | incomplete, | | | | | | | &gt; the | | | | | | | user | | | | | | | &gt; indicates | | | | | | | &gt; 01 for | | | | | | | &gt; the day | | | | | | | &gt; and | | | | | | | &gt; January | | | | | | | &gt; for the | | | | | | | &gt; months for | | | | | | | &gt; that its | | | | | | | &gt; data | | | | | | | &gt; relative | | | | | | | &gt; on date | | | | | | | &gt; either | | | | | | | &gt; accepted | +---+---------------+--------+-----------+-------- -------+-------------+ | 6 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Others | &gt; No | &gt; Field | &gt; Brief | &gt; The | | | &gt; activities&lt;/strong&gt; | &gt; | &gt; from | &gt; description | &gt; character | | | | obliged | &gt; enter | &gt; others | &gt; no | | | | atory | | &gt; activities | &gt; | | | | | | &gt; led by | mandatory | | | | | | &gt; the | &gt; is in | | | | | | &gt; laboratory | &gt; compared to | | | | | | | &gt; the socket | | | | | | | &gt; into account | | | | | | | &gt; from | | | | | | | &gt; enr | | | | | | | registration | | | | | | | &gt; of | | | | | | | &gt; data | | | | | | | &gt; entries. | +---+---------------+--------+-----------+-------- -------+-------------+ | 7 | &gt; &lt;strong data-md-type="double_emphasis"&gt;Address&lt;/strong&gt; | &gt; No | &gt; Field | &gt; The | | | | | &gt; | &gt; from | &gt; | | | | | obliged | &gt; enter | location | | | | | atory | | &gt; from | | | | | | | &gt; laboratory | | | | | | | &gt; (street, | | | | | | | &gt; neighborhood, | | | | | | | &gt; city) | | +---+---------------+--------+-----------+-------- -------+-------------+ | 8 | &gt; | No | &gt; Field | &gt; The number | | | | &lt;strong data-md-type="double_emphasis"&gt;Telephone&lt;/strong&gt; | obliged | &gt; from | &gt; from | | | | | atory | &gt; enter | &gt; phone | | | | | | | &gt; permanent | | | | | | | &gt; From | | | | | | | &gt; laboratory | | +---+---------------+--------+-----------+-------- -------+-------------+ | &gt; | &gt; &lt;strong data-md-type="double_emphasis"&gt;Email&lt;/strong&gt; | No | &gt; Field | &gt; Indicate the | | | | | obliged | &gt; from | &gt; email | | | 9 | | atory | &gt; enter | | | +---+---------------+--------+-----------+-------- -------+-------------+ | &gt; | &gt; &lt;strong data-md-type="double_emphasis"&gt;Site | No | &gt; Field | &gt; Indicates a | | | | &gt; website&lt;/strong&gt; | obliged | &gt; from | &gt; site where | | | 1 | | atory | &gt; enter | &gt; are | | | 0 | | | | &gt; | | | | | | | searchable | | | | | | | &gt; the | | | | | | | &gt; activities, | | | | | | | &gt; | | | | | | | information | | | | | | | &gt; relative | | | | | | | &gt; to | | | | | | | &gt; laboratory | | +---+---------------+--------+-----------+-------- -------+-------------+ | &gt; | &gt; &lt;strong data-md-type="double_emphasis"&gt;Others | No | &gt; Field | &gt; Indicates | | | | &gt; contact&lt;/strong&gt; | obliged | &gt; from | &gt; others | | | 1 | | atory | &gt; enter | &gt; contacts | | | 1 | | | | &gt; other than | | | | | | | &gt; those cited | | | | | | | &gt; higher | | | | | | | &gt; | | | | | | | (Responsible | | | | | | | &gt; of the | | | | | | &gt; | | | | | | | laboratory, | | | | | | | &gt; Fax, | | | | | | | &gt; fax, | | | | | | | &gt; others | | | | | | | &gt; telephones, | | | | | | | &gt; ...        | | +---+---------------+--------+-----------+-------- -------+-------------+ | &gt; | &gt; &lt;strong data-md-type="double_emphasis"&gt;Products | &gt; No | &gt; Menu | &gt; Indicate the | &gt; This field | | | &gt; analyzed&lt;/strong&gt; | &gt; | &gt; d | &gt; products | &gt; becomes | | 1 | | obliged | rolling | &gt; on | &gt; | | 2 | | atory | | &gt; which ones | mandatory | | | | | | &gt; wear the | &gt; as soon as | | | | | | &gt; a | &gt; the | | | | | | analyses/test | user | | | | | | s/calibrations | &gt; decides to | | | | | | &gt; from | &gt; | | | | | | &gt; laboratory | to inform | | | | | | | &gt; the | | | | | | | &gt; products | | | | | | | &gt; analyzed. | | | | | | | &gt; | | | | | | | &gt; Se | | | | | | | &gt; refer to | | | | | | | &gt; the box | | | | | | | &gt; | | | | | | | below | +---+---------------+--------+-----------+-------- -------+-------------+ | &gt; | &gt; | &gt; No | &gt; Menu | &gt; Indicate the | &gt; This field | | | certified | &gt; | &gt; d | &gt; different | &gt; becomes | | 1 | | obliged | rolling | &gt; c | &gt; | | 3 | | atory | | certifications | mandatory | | | | | | &gt; obtained | &gt; as soon as | | | | | | &gt; by the | &gt; the | | | | | | &gt; structure | user | | | | | | | &gt; decides to | | | | | | | &gt; | | | | | | | to inform | | | | | | | &gt; the | | | | | | | &gt; cer | | | | | | | tifications | | | | | | | &gt; received.  | | | | | | | &gt; Se | | | | | | | &gt; refer to | | | | | | | &gt; the box | | | | | | | &gt; here | | | | | | | &gt; below | +---+---------------+--------+-----------+-------- -------+-------------+
 
-**Suppression - Modification d'un enregistrement**
+**Deletion - Modification of a record**
 
-![](./media/image36.png){width="6.718055555555556in" height="1.2756944444444445in"}Il est possible de supprimer ou de modifier un enregistrement. La suppression d'un enregistrement est une action irréversible. La figure ci-après illustre la suppression et la modification.
+![](./media/image36.png){width="6.718055555555556in" height="1.2756944444444445in"}It is possible to delete or modify a registration. Deleting a record is an irreversible action. The figure below illustrates deletion and modification.
 
-# Saisie des données entreprises
+# Entering business data
 
-Pour enregistrer les métadonnées sur une entreprise :
+To save metadata about a company:
 
-- **Cliquer** sur « Entreprises » dans le menu de navigation de la page de saisie des données
+- **Click** on “Companies” in the navigation menu of the data entry page
 
-- **Cliquer** sur « Ajouter » dans le coin supérieur droit de la page affichant les entreprises déjà saisies, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the companies already entered, to access the entry form;
 
-# Sur le formulaire :
+# On the form:
 
-- **Saisir** le **« Nom »** de l'entreprise (champ de saisie, obligatoire) ;
+- **Enter** the **"Name"** of the company (input field, mandatory);
 
-- **Sélectionner** le **« Domaine d'activité »** (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Field of activity"** (field not required, drop-down menu);
 
-- **Choisir** le **« type d'organisme »** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **“type of organization”** (field not required, drop-down menu);
 
-- **Spécifier** la **« Date de création »** de l'entreprise (champ non obligatoire, menu déroulant) ; si la date n'est
+- **Specify** the **"Date of creation"** of the company (field not required, drop-down menu ); if the date is not
 
-> pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+> not complete, assign 01 for the day and January for the month;
 
-- **Saisir « Autres activités »** (brève description, champ non obligatoire, champ de saisie) ;
+- **Enter “Other activities”** (short description, non-mandatory field, input field);
 
-- **Saisir** l' **« Adresse »** de l'entreprise ;
+- **Enter** the **“Address”** of the company;
 
-- **Saisir** le **« Numéro de téléphone »** de la structure au format (+222) suivi du numéro;
+- **Enter** the **“Telephone number”** of the structure in the format (+222) followed by the number;
 
-- **Saisir** l' **« Email »** si possible ;
+- **Enter** the **"Email"** if possible;
 
-- **Saisir** le **« Site web »** lorsque la structure dispose d'un site web;
+- **Enter** the **"Website"** when the structure has a website;
 
-- **Saisir** les **« Autres contacts »** de la structure (Responsable, Fax, Télécopie, Autres téléphones, etc.) ;
+- **Enter** the **“Other contacts”** of the structure (Manager, Fax, Fax, Other telephones , etc.) ;
 
-- **Spécifier** les **« Produits concernés »** par l'entreprise ainsi que les types de normes et normes utilisées par rapport aux produits concernés (menu déroulant) ;
+- **Specify** the **"Products concerned"** by the company as well as the types of standards and standards used in relation to the products concerned (drop-down menu);
 
-- **Spécifier** les **«Certifications»** de l'entreprise (menu déroulant);
+- **Specify** the company's **“Certifications”** (drop-down menu);
 
-- **Spécifier** les **«Prix obtenus»** de l'entreprise (menu déroulant) ;
+- **Specify** the company's **"Achievements"** (drop-down menu);
 
-- # Enregistrer votre formulaire saisi en cliquant sur le bouton « Enregistrer » en bas et à droite du formulaire.
+- # Save your completed form by clicking on the "Save" button at the bottom right of the form.
 
-Il vous est possible de supprimer ou de modifier un enregistrement. La suppression d'un enregistrement est une action irréversible. Se référer à la figure 27 illustrant la suppression et la modification d'un enregistrement.
+You can delete or modify a record. Deleting a record is an irreversible action. Refer to figure 27 illustrating the deletion and modification of a record.
 
-# Saisie des données relatives aux organismes d'accréditation / certification; d'inspection et de normalisation
+# Entry of data relating to accreditation / certification bodies; inspection and standardization
 
-# Pour enregistrer les métadonnées sur un organisme d'accréditation ou de certification :
+# To register metadata with an accreditation or certification body:
 
-- **Cliquer** sur « Organismes d'accréditation » dans le menu de navigation de la page de saisie des données ;
+- **Click** on "Accrediting Bodies" in the navigation menu of the data entry page;
 
-- **Cliquer** sur « Ajouter » dans le coin supérieur droit de la page affichant les organismes déjà saisis, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the organizations already entered, to access the entry form;
 
 #
 
-# Sur le formulaire :
+# On the form:
 
-- **Saisir** le **« Nom »** de l'organisme (champ de saisie, obligatoire) ;
+- **Enter** the **“Name”** of the organization (input field, mandatory);
 
-- **Sélectionner** le **«Domaine d'activité»** (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Field of activity"** (field not required, drop-down menu);
 
-- **Choisir** le **« type d'organisme »** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **“type of organization”** (field not required, drop-down menu);
 
-- **Spécifier** la **« Date de création »** de l'organisme (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Creation date"** of the organization (field not required, drop-down menu ); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir « Autres activités »** (brève description, champ non obligatoire, champ de saisie) ;
+- **Enter “Other activities”** (short description, non-mandatory field, input field);
 
-- **Saisir** l' **« Adresse »** de l'organisme ;
+- **Enter** the **"Address"** of the organization;
 
-- **Saisir** le **« Numéro de téléphone »** de la structure au format (+222) suivi du numéro;
+- **Enter** the **“Telephone number”** of the structure in the format (+222) followed by the number;
 
-- **Saisir** l' **«Email »** si possible ;
+- **Enter** the **"Email"** if possible;
 
-- **Saisir** le **« Site web »** lorsque la structure dispose d'un site web;
+- **Enter** the **"Website"** when the structure has a website;
 
-- **Saisir** les **« Autres contacts »** de la structure (Responsable, Fax, Télécopie, Autres téléphones, etc.) ;
+- **Enter** the **“Other contacts”** of the structure (Manager, Fax, Fax, Other telephones , etc.) ;
 
-- **Spécifier** les **« Produits analysés »** par l'organisme ainsi que les types de normes et normes utilisées par rapport aux produits analysés (menu déroulant) ;
+- **Specify** the **“Products analyzed”** by the organization as well as the types of standards and standards used in relation to the products analyzed (drop-down menu);
 
-Le processus de saisir les métadonnées sur les organismes d'inspection et de normalisation est identique à celui des organismes d'accréditation / certification. Toutefois, il faut sélectionner le sous menu « organismes d'inspection » ou « organisme de normalisation » selon le cas. Par ailleurs, il est aussi possible de modifier ou de supprimer un enregistrement. Pour cela se référer à l'exemple illustré par la figure 27.
+The process of entering metadata on inspection and standardization bodies is identical to that of accreditation/certification bodies. However, you must select the "inspection bodies" or "standardization body" sub-menu as appropriate. Furthermore, it is also possible to modify or delete a record. To do this, refer to the example illustrated in figure 27.
 
-# Saisie des données centres de formation
+# Entering training center data
 
-La saisie des métadonnées relatives aux centres de formation s'opère en plusieurs étapes. Dans le menu de navigation de la page de saisie, sous le thème Table A, **cliquer** sur le sous thème «CENTRES DE FORMATION». La page des différents centres de formation déjà intégrés dans la base s'affiche. Ces différentes métadonnées présentées dans la zone blanche, sont dans un tableau ayant cinq (05) colonnes. Le nombre de lignes dépend du nombre de données enregistrées. La première colonne renseigne sur le pays, la deuxième porte sur le type d'organisme, la troisième sur le nom des centres de formation, la quatrième et la cinquième sont portent respectivement sur l'outil de modification de données et l'outil de suppression des données.
+Entering training center metadata involves several steps. In the navigation menu of the entry page, under the Table A theme, **click** on the "TRAINING CENTERS" sub-theme. The page of the different training centers already integrated in the database is displayed. These different metadata presented in the white area, are in a table with five (05) columns. The number of lines depends on the number of recorded data. The first column provides information on the country, the second relates to the type of organization, the third to the name of the training centers, the fourth and the fifth relate respectively to the data modification tool and the deletion tool Datas.
 
-Pour enregistrer un nouveau centre de formation :
+To register a new training center:
 
-- C**liquer** sur «Ajouter» dans le coin supérieur droit de la page affichant les centres de formation déjà saisis, pour avoir accès au formulaire de saisie ;
+- C**click** on "Add" in the upper right corner of the page displaying the training centers already entered, to access the entry form;
 
-# Sur le formulaire :
+# On the form:
 
-- **Saisir** le **«Nom»** du centre de formation (champ de saisie, obligatoire) ;
+- **Enter** the **"Name"** of the training center (input field, mandatory);
 
-- **Sélectionner** le **«Domaine d'activité»** (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Field of activity"** (field not required, drop-down menu);
 
-- **Choisir** le **«type d'organisme»** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **“type of organization”** (field not required, drop-down menu);
 
-- **Spécifier** la **«Date de création»** de l'entreprise (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Creation date"** of the company (field not required, drop-down menu ); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir «Autres activités»** (brève description, champ non obligatoire, champ de saisie) ;
+- **Enter "Other activities"** (short description, non-mandatory field, input field);
 
-- **Saisir** l' **«Adresse »** du centre de formation ;
+- **Enter** the **"Address"** of the training center;
 
-- Saisir le « Numéro de téléphone » de la structure au format (+222) suivi du numéro ;
+- Enter the "Telephone number" of the structure in the format (+222) followed by the number;
 
-- Saisir l'«Email» du centre de formation ;
+- Enter the "Email" of the training center;
 
-- Saisir le « Site web » lorsque la structure dispose d'un site web ;
+- Enter the “Website” when the structure has a website;
 
-- Saisir les « Autres contacts » de la structure (Responsable, Fax, Télécopie, Autres téléphones au format (+222) suivi du numéro, etc.);
+- Enter the "Other contacts" of the structure (Manager, Fax, Fax, Other telephones in the format (+222) followed by the number, etc.);
 
-- Enregistrer votre formulaire saisi en cliquant sur le bouton **«Enregistrer»** en bas et à droite du formulaire.
+- Save your completed form by clicking on the **"Save"** button at the bottom right of the form.
 
-Il vous est possible de supprimer ou de modifier un enregistrement.
+You can delete or modify a record.
 
-Pour supprimer ou modifier un enregistrement,
+To delete or modify a record,
 
-- **Faire** un filtre selon le pays au niveau de la page d'affichage des centres de formation ou selon le nom du centre concerné ;
+- **Filter** according to the country on the training center display page or according to the name of the center concerned;
 
-- **Cliquer** sur l'icône « **x** » pour supprimer un enregistrement. La suppression d'un enregistrement est une action irréversible.
+- **Click** on the “**x**” icon to delete a record. Deleting a record is an irreversible action.
 
-- ![](./media/image37.png){width="0.14722222222222223in" height="0.1951388888888889in"}![](./media/image38.png){width="0.14722222222222223in" height="0.1951388888888889in"}**Cliquer** sur l'icône « » situé à droite de la ligne dont l'enregistrement est à modifier puis opérer vos modifications puis enregistrer.
+- ![](./media/image37.png){width="0.14722222222222223in" height="0.1951388888888889in"}![](./media/%20image38.png){width="0.14722222222222223in" height="0.1951388888888889in"}**Click** on the “ ” icon located to the right of the line whose record is to be modified then make your changes then save.
 
-    1. # Saisie des données centres de réparation
+    1. # Entering repair center data
 
-Pour enregistrer les métadonnées sur un centre de réparation :
+To save metadata to a repair center:
 
-- **Cliquer** sur «Centre de réparation» sous le thème A dans le menu de navigation de la page de saisie des données ;
+- **Click** on “Repair Center” under topic A in the navigation menu of the data entry page;
 
-- **Cliquer** sur «Ajouter» dans le coin supérieur droit de la page affichant les Centres de réparation déjà saisis, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the Repair Centers already entered, to access the entry form;
 
-# Sur le formulaire :
+# On the form:
 
-- **Saisir** le **« Nom »** du centre de formation (champ de saisie, obligatoire);
+- **Enter** the **“Name”** of the training center (entry field, mandatory);
 
-- **Sélectionner** le **«Domaine d'activité»** (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Field of activity"** (field not required, drop-down menu);
 
-- **Choisir** le **«type d'organisme»** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **“type of organization”** (field not required, drop-down menu);
 
-- **Spécifier** la **«Date de création»** du centre de formation (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Creation date"** of the training center (field not required, drop-down menu ); if the date is not complete, assign 01 for the day and January for the month;
 
-- Saisir les «Autres activités» du centre (brève description, champ non obligatoire, champ de saisie) ;
+- Enter the “Other activities” of the center (short description, non-compulsory field, input field);
 
-- **Saisir** l' **«Adresse»** du centre de réparation ;
+- **Enter** the **"Address"** of the repair center;
 
-- **Saisir** le **«Numéro de téléphone»** du centre de réparation au format (+222) suivi du numéro;
+- **Enter** the **“Telephone number”** of the repair center in the format (+222) followed number;
 
-- **Saisir** l' **«Email »** du centre de réparation ;
+- **Enter** the **"Email"** of the repair center;
 
-- **Saisir** le **« Site web »** lorsque la structure dispose d'un site web ;
+- **Enter** the **"Website"** when the structure has a website;
 
-- **Saisir** les **« Autres contacts »** de la structure (Responsable, Fax, Télécopie, Autres téléphones au format (+222) suivi du numéro, etc.) ;
+- **Enter** the **“Other contacts”** of the structure (Manager, Fax, Fax, Other telephones in the format (+222) followed by the number, etc.);
 
-- **Saisir** les **« Compétences »** du centre de réparation (brève description, champ non obligatoire)
+- **Enter** the **“Skills”** of the repair center (short description, field not mandatory)
 
-- **Saisir** les **« Equipements déjà réparés »** par centre de réparation (brève description, champ non obligatoire) ;
+- **Enter** the **"Equipment already repaired"** by repair center (short description, field not mandatory );
 
-- **Saisir** les **« Problèmes résolus »** par le centre de réparation (brève description, champ non obligatoire) ;
+- **Enter** the **“Issues solved”** by the repair center (short description, field not mandatory );
 
-- **Spécifier** les **« Prix obtenus »** de l'entreprise (menu déroulant) ;
+- **Specify** the company's **"Achievements"** (drop-down menu);
 
-Enregistrer votre formulaire saisi en cliquant sur le bouton «Enregistrer» en bas et à droite du formulaire.
+Save your completed form by clicking on the "Save" button at the bottom right of the form.
 
-# Saisie des données relatives aux cabinets conseils
+# Entering data relating to consulting firms
 
-Pour enregistrer les métadonnées relatives aux cabinets conseils :
+To register consulting firm metadata:
 
-- **Cliquer** sur le sous thème «cabinets conseils» du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the "consulting firms" sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur «Ajouter» dans le coin supérieur droit de la page affichant la liste des cabinets conseils enregistrés dans la base, pour avoir accès au formulaire de saisie ci -dessous.
+- **Click** on "Add" in the upper right corner of the page displaying the list of consulting firms registered in the database, to access the entry form below .
 
-![](./media/image39.png){width="6.197222222222222in" height="1.9859787839020122in"}Figure 27 : Formulaire de saisie des métadonnées sur les cabinets conseils
+![](./media/image39.png){width="6.197222222222222in" height="1.9859787839020122in"}Figure 27: Metadata entry form on consulting firms
 
-Sur le formulaire :
+On the form:
 
-- Saisir le **«Nom»** du cabinet conseil (champ de saisie, obligatoire);
+- Enter the **"Name"** of the consulting firm (input field, mandatory);
 
-- **Sélectionner** le **« Domaine d'activité »** (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Field of activity"** (field not required, drop-down menu);
 
-- **Choisir** le **« type d'organisme »** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **“type of organization”** (field not required, drop-down menu);
 
-- **Saisir** la **« Structure officielle de tutelle »** du cabinet conseil (champ non obligatoire) ;
+- **Enter** the **"Official supervisory structure"** of the consulting firm (field not mandatory);
 
-- **Spécifier** la **«Date de création»** du cabinet conseil (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Creation date"** of the consulting firm (field not required, drop-down menu) ; if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir** les **«Autres activités»** du cabinet (brève description, champ non obligatoire, champ de saisie) ;
+- **Enter** the **“Other activities”** of the firm (short description, non-mandatory field, seizure) ;
 
-- **Saisir** l' **«Adresse »** du cabinet conseil ;
+- **Enter** the **"Address"** of the consulting firm;
 
-- **Saisir** le **«Numéro de téléphone»** de la structure au format (+222) suivi du numéro ;
+- **Enter** the **“Telephone number”** of the structure in the format (+222) followed by the number ;
 
-- **Saisir** l' **«Email»** si possible ;
+- **Enter** the **"Email"** if possible;
 
-- **Saisir** le **«Site web»** lorsque la structure dispose d'un site web ;
+- **Enter** the **"Website"** when the structure has a website;
 
-- **Saisir** les **« Autres contacts »** de la structure (Responsable, Fax, Télécopie, Autres téléphones au format (+222) suivi du numéro, etc.) ;
+- **Enter** the **“Other contacts”** of the structure (Manager, Fax, Fax, Other telephones in the format (+222) followed by the number, etc.);
 
-- # Enregistrer votre formulaire saisi en cliquant sur le bouton « Enregistrer » en bas et à droite du formulaire
+- # Save your completed form by clicking on the "Save" button at the bottom right of the form
 
 #
 
-# Saisie des données relatives aux consultants / experts en infrastructure qualité
+# Entering data relating to quality infrastructure consultants / experts
 
-Pour enregistrer les métadonnées sur les consultants / experts en infrastructure qualité :
+To record metadata on consultants / quality infrastructure experts:
 
-- **Cliquer** sur le sous thème « Consultants / experts en infrastructure qualité » du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the “Quality infrastructure consultants / experts” sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur « Ajouter » dans le coin supérieur droit de la page affichant la liste des consultants enregistrés dans la base, pour avoir accès au formulaire de saisie.
+- **Click** on "Add" in the upper right corner of the page displaying the list of consultants registered in the database, to access the input form.
 
-# Sur le formulaire de saisie :
+# On the input form:
 
-- **Saisir** le **«Nom»** du consultant (champ de saisie, obligatoire) ;
+- **Enter** the **"Name"** of the consultant (input field, mandatory);
 
-- **Sélectionner** le **«Diplôme le plus élevé»** obtenu par le consultant (champ non obligatoire, menu déroulant) ;
+- **Select** the **"Highest degree"** obtained by the consultant (field not mandatory, menu drop-down);
 
-- **Choisir** les **«langues parlées»** par le consultant. (champ non obligatoire, menu déroulant). Les langues parlées prennent en compte celles locales ;
+- **Choose** the **“languages spoken”** by the consultant. (non-compulsory field, drop-down menu). The languages spoken take local ones into account;
 
-- **Spécifier** la **« Date / année de démarrage »** des activités de consultation par l'expert (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Date / year of start"** of the consultation activities by the expert ( non-mandatory field, drop-down menu); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Choisir** le **«domaine d'activité»** (champ non obligatoire, menu déroulant) ;
+- **Choose** the **"field of activity"** (field not required, drop-down menu);
 
-- **Choisir** les **« Produits concernés »** par le consultant (champ obligatoire, menu déroulant) ;
+- **Choose** the **"Applicable Products"** by the consultant (mandatory field, drop-down menu);
 
-- **Saisir** les **« Autres activités »** menées par le consultant (Champ non obligatoire, brève description, champ de saisir) ;
+- **Enter** the **"Other activities"** carried out by the consultant (Non-mandatory field, brief description, field to enter);
 
-- **Saisir** l' **« Adresse »** du consultant (Ville, Quartier, structure, etc.);
+- **Enter** the **"Address"** of the consultant (City, District, structure, etc.) ;
 
-- **Saisir** le **« Numéro de téléphone »** du consultant au format (+222) suivi du numéro ;
+- **Enter** the **"Telephone number"** of the consultant in the format (+222) followed by the number ;
 
-- **Saisir** l' **« Email »** du consultant / expert ;
+- **Enter** the **"Email"** of the consultant / expert;
 
-- **Saisir** le **« Site web »** lorsque le consultant dispose d'un site web;
+- **Enter** the **"Website"** when the consultant has a website;
 
-- **Saisir** les **« Autres contacts »** du consultant (Fax, Télécopie, Autres téléphones au format (+222) suivi du numéro, etc.) ;
+- **Enter** the **“Other contacts”** of the consultant (Fax, Fax, Other telephones in the format ( +222) followed by the number, etc.);
 
-- **Spécifier** les **« Certifications »** du consultant (menu déroulant) ; puis,
+- **Specify** the consultant's **"Certifications"** (drop-down menu); then,
 
-- **Importer** le CV du consultant en cliquant sur l'icône **« Choisir un fichier »** sous la ligne « Curriculum Vitae » ;
+- **Import** the consultant's resume by clicking the **"Choose file" icon** under the "Curriculum Vitae" line;
 
-- Enregistrer votre formulaire saisi en cliquant sur le bouton «Enregistrer» en bas et à droite du formulaire
+- Save your completed form by clicking on the "Save" button at the bottom right of the form
 
 #
 
-# Saisie des données relatives aux normes
+# Entering standards data
 
-Pour enregistrer les métadonnées sur les normes :
+To save standards metadata:
 
-- **Cliquer** sur le sous thème «Norme» du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the "Standard" sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur «Ajouter» dans le coin supérieur droit de la page affichant la liste des normes enregistrées dans la base, pour avoir accès au formulaire de saisie indiquée sur la figure ci-dessous ;
+- **Click** on "Add" in the upper right corner of the page displaying the list of standards saved in the database, to access the input form indicated in the figure below ;
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran formulaire
-_norme.jpg](./media/image40.jpeg){width="6.4631944444444445in" height="3.445410104986877in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>screen form<br>_norm.jpg](./media/image40.jpeg){width="6.4631944444444445in" height="3.445410104986877in"}
 
-Figure 26 : Formulaire de saisie des métadonnées «norme»
+Figure 26: “Standard” metadata entry form
 
-**Sur le formulaire de saisie :**
+**On the input form:**
 
-- **Spécifier** le **«Type de norme»** -- Norme interne à la structure, norme nationale, norme régionale, norme internationale - (champ obligatoire, menu déroulant) ;
+- **Specify** the **“Standard Type”** -- In-house standard, national standard, regional standard, international standard - (required field, drop-down menu);
 
-- **Saisir** le **«Titre de la norme»**. Ce titre doit être court (champ obligatoire, champ de saisie) ;
+- **Enter** the **“Standard Title”**. This title should be short (required field, input field);
 
-- **Saisir** la **«Référence»** de la norme (champ non obligatoire, champ de saisie) ;
+- **Enter** the **“Reference”** of the standard (field not mandatory, entry field);
 
-- **Spécifier** le **«Secteur d'activité»** concerné par la norme (champ non obligatoire, menu déroulant) ;
+- **Specify** the **"Sector of activity"** concerned by the standard (field not mandatory, menu drop-down);
 
-- **Spécifier** les **«Produits concernés»** par la norme (champ non obligatoire, menu déroulant) ;
+- **Specify** the **"Products concerned"** by the standard (field not mandatory, drop-down menu);
 
-- **Saisir** le **«Nom du comité technique de normalisation»** en rapport avec la norme (champ non obligatoire) ;
+- **Enter** the **“Name of the standardization technical committee”** related to the standard (field not obligatory) ;
 
-- **Saisir** le **«Nom de l'organisme de normalisation»** (champ obligatoire, champ de saisie) ;
+- **Enter** the **“Name of standardization organization”** (mandatory field, entry field );
 
-- **Saisir** l'**«Adresse de l'organisme de normalisation »** (champ non obligatoire, champ de saisie) ;
+- **Enter** the **"Address of standardization body"** (non-mandatory field, field input);
 
-- **Spécifier** la **«Date de publication»** de la norme renseignée (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Publication date"** of the standard entered (field not mandatory, drop-down menu ); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir** de **«Lien d'accès »** à la norme ;
+- **Enter** the **"Access link"** to the standard;
 
-- **Saisir** le **«Programme de normalisation»** (champ non obligatoire, champ de saisie) puis,
+- **Enter** the **"Standardization program"** (field not required, entry field) then,
 
-- **Cliquer** sur le bouton **«Enregistrer»** au bas du formulaire pour valider le formulaire renseigné.
+- **Click** on the button **"Save"** at the bottom of the form to validate the completed form.
 
-# Saisie des données relatives aux points d'information
+# Entering Inquiry Point Data
 
-Pour enregistrer les métadonnées sur les points d'information :
+To save data point metadata:
 
-- **Cliquer** sur le sous thème «Points d'information» du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the "Information points" sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur «Ajouter» dans le coin supérieur droit de la page affichant la liste de tous les points d'information présents dans la base pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the list of all the information points present in the database to access the input form ;
 
-# Sur le formulaire de saisie :
+# On the input form:
 
-- **Saisir** le **«Nom»** du point d'information (champ obligatoire, champ de saisie) ;
+- **Enter** the **"Name"** of the information point (mandatory field, input field) ;
 
-- **Saisir** la **«Localisation»** du point d'information concerné -- Ville, quartier, Structure, etc. - (champ non obligatoire, champ de saisie) ;
+- **Enter** the **"Location"** of the information point concerned -- City, district, Structure , etc. - (non-compulsory field, input field);
 
-- **Saisir l' «Adresse»** du point d'information -- Téléphone c, Email, Fax, etc. - (champ non obligatoire, menu déroulant) ;
+- **Enter the "Address"** of the inquiry point -- Phone c, Email, Fax, etc. - (non-mandatory field, drop-down menu);
 
-- **Saisir** le **«Site web»** du point d'information (champ non obligatoire) ;
+- **Enter** the **"Website"** of the information point (field not mandatory);
 
-- **Saisir** les **«Autres informations complémentaires»,** des données autres que celles déjà mentionnées sur le point d'information (champ non obligatoire, champ de saisie) ;
+- **Enter** the **“Other additional information”,** data other than those already mentioned in point information (non-compulsory field, input field);
 
-- **Spécifier** la **«Date de création»** du point d'information renseigné (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois, puis ;
+- **Specify** the **"Creation date"** of the information point entered (field not mandatory, scrolling menu) ; if the date is not complete, assign 01 for the day and January for the month, then ;
 
-- **Saisir** les **«Types de régulation»** opérés par le point d'information (champ non obligatoire, champ de saisie) ;
+- **Enter** the **"Types of regulation"** operated by the information point (field not mandatory , entry field) ;
 
-- **Cliquer** sur le bouton **« Enregistrer »** au bas du formulaire pour valider le formulaire renseigné.
+- **Click** on the button **"Save"** at the bottom of the form to validate the completed form.
 
-# Saisie des données relatives aux règlements techniques
+# Entry of data relating to technical regulations
 
-Pour enregistrer les métadonnées sur les règlements techniques :
+To save technical regulations metadata:
 
-- **Cliquer** sur le sous thème «règlement technique» du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the "technical regulations" sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur « Ajouter » dans le coin supérieur droit de la page affichant la liste des règlements techniques présents dans la base, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the list of technical regulations present in the database, to access the input form;
 
-# Sur le formulaire de saisie :
+# On the input form:
 
-- **Spécifier** le **«Type»** de règlement -- Arrêté national, Loi, Décret, Règlement / Directive Communautaire / Directive Régionale, Règlement / Directive OOAS - (champ obligatoire, menu déroulant) ;
+- **Specify** the **"Type"** of regulation -- National Order, Law, Decree, Regulation / Community Directive / Regional Directive, Regulation / WAHO Directive - (mandatory field, drop-down menu);
 
-- **Saisir** le **«Titre»** du règlement technique. Ce titre doit être court (champ obligatoire, champ de saisie) ;
+- **Enter** the **“Title”** of the technical regulation. This title must be short (mandatory field, input field);
 
-- **Spécifier** le **«Domaine d'activité»** du règlement (champ non obligatoire, menu déroulant) ;
+- **Specify** the **“Field of activity”** of the regulations (field not mandatory, drop-down menu) ;
 
-- **Spécifier** les **«Produits concernés »** par le règlement technique (champ non obligatoire, menu déroulant) ;
+- **Specify** the **"Products concerned"** by the technical regulations (field not mandatory, drop-down menu) ;
 
-- **Spécifier** la **«Date d'adoption»** du règlement technique renseigné (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **"Date of adoption"** of the completed technical regulation (field not mandatory, menu drop-down); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Spécifier** la **« Date d'entrée en vigueur »** dudit règlement (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **“Date of entry into force”** of said regulation (non-mandatory field, menu drop-down); if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir** le nom de la **«Structure élaboratrice»** du règlement technique ;
+- **Enter** the name of the **"Developing structure"** of the technical regulations;
 
-- **Saisir** de **«Lien d'accès »** au règlement technique ;
+- **Enter** **"Access link"** to the technical regulations;
 
-- **Saisir** le **«Nom du point d'information»** rattaché au règlement mentionné (champ non obligatoire, champ de saisie) ;
+- **Enter** the **“Name of the information point”** attached to the regulation mentioned (field not mandatory , entry field) ;
 
-- **Saisir** l'**«Adresse du point d'information»** rattaché au règlement technique (champ non obligatoire, champ de saisie);
+- **Enter** the **“Information point address”** attached to the technical regulation (field not mandatory, input field);
 
-- **Saisir** les **«Autres informations complémentaires»** des données autres que celles déjà mentionnées sur le point d'information (champ non obligatoire, champ de saisie); puis,
+- **Enter** the **"Other additional information"** of the data other than those already mentioned in point d 'information (non-mandatory field, input field); then,
 
-- **Cliquer** sur le bouton **«Enregistrer»** au bas du formulaire pour valider le formulaire renseigné.
+- **Click** on the button **"Save"** at the bottom of the form to validate the completed form.
 
-# Saisie des données relatives à la politique qualité
+# Entry of data relating to the quality policy
 
-Pour enregistrer les métadonnées sur la politique qualité d'un Etat :
+To save metadata on a State's quality policy:
 
-- **Cliquer** sur le sous thème « Politique qualité » du thème Table A dans le menu de navigation de la page de saisie des données ;
+- **Click** on the "Quality policy" sub-theme of the Table A theme in the navigation menu of the data entry page;
 
-- **Cliquer** sur « Ajouter » dans le coin supérieur droit de la page affichant la liste des politiques qualité présentes dans la base, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the list of quality policies present in the database, to access the input form;
 
 ![](./media/image41.jpeg){width="6.183922790901137in" height="2.9544750656167977in"}
 
-Figure 27: Formulaire de saisir des métadonnées « politique qualité »
+Figure 27: Form for entering "quality policy" metadata
 
 #
 
-# Sur le formulaire de saisie relatif à la politique qualité :
+# On the input form relating to the quality policy:
 
-- **Spécifier** le **«Type»** de politique qualité -- Politique qualité Communautaire, Politique qualité Régionale, Politique qualité nationale - (champ obligatoire, menu déroulant) ;
+- **Specify** the **"Type"** of quality policy -- Community Quality Policy, Regional Quality Policy, National Quality Policy - (mandatory field, drop-down menu);
 
-- **Saisir** le **«Titre»** du document de politique. Ce titre doit être court (champ obligatoire, champ de saisie) ;
+- **Enter** the **“Title”** of the policy document. This title must be short (mandatory field, input field);
 
-- **Saisir** l'**«Objectif et le champ d'application»** de la politique qualité (champ non obligatoire) ;
+- **Enter** the **"Objective and scope"** of the quality policy (field not required) ;
 
-- **Spécifier** la **«Date d'adoption»** de la politique qualité renseignée (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **“Date of adoption”** of the filled-in quality policy (field not mandatory, scrolling menu) ; if the date is not complete, assign 01 for the day and January for the month;
 
-- **Spécifier** la **«Date d'entrée en vigueur»** de ladite politique qualité (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- **Specify** the **“Effective date”** of said quality policy (field not mandatory , scrolling menu) ; if the date is not complete, assign 01 for the day and January for the month;
 
-- **Saisir** de **«Lien d'accès»** de la politique ;
+- **Enter** the **“Access link”** of the policy;
 
-- **Saisir** le **«Nom du point d'information»** rattaché à la politique mentionnée (champ non obligatoire, champ de saisie) ;
+- **Enter** the **"Information point name"** attached to the policy mentioned (field not mandatory, input field);
 
-- **Saisir** l' **«Adresse du point d'information»** rattaché à la politique mentionnée (champ non obligatoire, champ de saisie) ;
+- **Enter** the **“Information point address”** attached to the mentioned policy (field not mandatory, input field);
 
-- **Saisir** les **«Autres informations complémentaires»** des données autres que celles déjà mentionnées sur le point d'information ou sur la norme (champ non obligatoire, champ de saisie) ; puis,
+- **Enter** the **"Other additional information"** of the data other than those already mentioned in point d information or on the standard (non-compulsory field, entry field); then,
 
-- **Cliquer** sur le bouton **«Enregistrer»** au bas du formulaire pour valider le formulaire rempli.
+- **Click** on the **“Save”** button at the bottom of the form to validate the completed form.
 
-# Saisie des données relatives aux membres de comité
+# Entering committee member data
 
-# régional
+# regional
 
-Pour enregistrer les métadonnées sur les membres de comité :
+To save committee member metadata:
 
-- **Cliquer** sur «Membres de comité» dans le menu de navigation de la page de saisie des données ;
+- **Click** on “Committee Members” in the navigation menu of the data entry page;
 
-- **Cliquer** sur «Ajouter» dans le coin supérieur droit de la page affichant la liste des membres de comités présents dans la base, pour avoir accès au formulaire de saisie ;
+- **Click** on "Add" in the upper right corner of the page displaying the list of committee members present in the database, to access the input form;
 
-# Sur le formulaire :
+# On the form:
 
-- **Saisir** le **«Nom du membre du comité»** choisi précédemment (champ de saisie, obligatoire) ;
+- **Enter** the **"Committee member name"** previously chosen (input field, mandatory) ;
 
-- **Sélectionner** le **«Comité communautaire»** auquel appartient le membre dont le nom a été saisi précédemment (champ obligatoire, menu déroulant) ;
+- **Select** the **"Community Committee"** to which the member whose name was entered previously belongs ( mandatory field, drop-down menu);
 
-- Choisir la «Position» du membre dans ledit comité (champ non obligatoire, menu déroulant)
+- Choose the "Position" of the member in the said committee (non-mandatory field, drop-down menu)
 
-- Spécifier la «Date de début» du mandat du membre (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- Specify the "Start date" of the member's mandate (non-mandatory field, drop-down menu); if the date is not complete, assign 01 for the day and January for the month;
 
-- Spécifier la «Date de fin» du mandat du membre (champ non obligatoire, menu déroulant) ; si la date n'est pas complète, attribuer 01 pour le jour et janvier pour le mois ;
+- Specify the "End date" of the member's mandate (non-mandatory field, drop-down menu); if the date is not complete, assign 01 for the day and January for the month;
 
-- Saisir dans le champ «Autres informations complémentaires» des données autres que celles déjà mentionnées sur le membre. Il peut s'agir du téléphone, du mail, etc. (champ non obligatoire, champ de saisir) ; puis,
+- Enter in the field "Other additional information" data other than those already mentioned on the member. It can be phone, email, etc. (non-compulsory field, field to enter); then,
 
-- Cliquer sur le bouton «Enregistrer» au bas du formulaire pour valider le formulaire rempli.
+- Click on the "Save" button at the bottom of the form to validate the completed form.
 
-# Importations des données INDUSTRIE dans la base
+# Imports of INDUSTRY data into the database
 
-Contrairement aux données QUALITE qui sont saisies directement en ligne, les données INDUSTRIE sont importées dans la base. Les données à importer sont renseignées dans la maquette Industrie de MAUQUIB au format Excel par la République Islamique de la Mauritanie et feront préalablement l'objet d'une vérification de cohérence au niveau du Département Statistique de la CEDEAO. La maquette Industrie est unique et standard identique à celle utilisée pour tous les pays de la CEDEAO. Cette ressemblance entre la maquette de la Mauritanie et celle des Etats de la CEDEAO s'inscrit dans une possible intégration ultérieure de la Mauritanie à la CEDEAO. Elle ne doit subir aucune modification. Son remplissage respecte des règles qui s'imposent à la Mauritanie. Les règles à observer sont présentées dans l'encadré ci-dessus.
+Unlike QUALITY data which is entered directly online, INDUSTRY data is imported into the database. The data to be imported are entered in the MAUQUIB Industry model in Excel format by the Islamic Republic of Mauritania and will first be subject to a consistency check at the level of the ECOWAS Statistics Department. The Industry model is unique and standard identical to that used for all ECOWAS countries. This resemblance between the model of Mauritania and that of the ECOWAS States is part of a possible subsequent integration of Mauritania into ECOWAS. It should not undergo any modification. Its filling respects the rules which are imposed on Mauritania. The rules to be observed are presented in the box above.
 
-Le processus d'importation des données industrie dans la base de données est le suivant :
+The process for importing industry data into the database is as follows:
 
-1. **Cliquer** sur «saisie des données» situé en bas dans la page d'accueil de la base de données ;
+1. **Click** on "data entry" located at the bottom of the database home page;
 
-2. **Renseigne**r vos identifiants de connexion (nom d'utilisateur et mot de passe) pour avoir accès à l'interface de saisie et d'importation des données dans la base ;
+2. **Enter** your login details (username and password) to access the interface for entering and importing data into the database ;
 
-3. **Clique**r sur le sous thème «Imports» du thème B du menu de navigation de gauche de la page de saisie et d'importation déjà importées ;
+3. **Click**r on the "Imports" sub-theme of theme B of the left navigation menu of the input and import page already imported;
 
-4. **Cliquer** sur «importer» pour démarrer votre importation des données. Vous obtenez une fenêtre présentée ci-dessous ;
+4. **Click** on "import" to start your data import. You obtain a window presented below;
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran import de fichier
-excel.jpg](./media/image42.jpeg){width="6.4631944444444445in" height="1.636641513560805in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>file import screenshot<br>excel.jpg](./media/image42.jpeg){width="6.4631944444444445in" height="1.636641513560805in"}
 
-> Figure 28 : Fenêtre d'importation de fichiers INDUSTRIE dans la base
+> Figure 28: Window for importing INDUSTRY files into the database
 
-1. **Saisir** un commentaire dans la zone intitulée COMMENTAIRE, champ de saisie obligatoire. Le commentaire peut être par exemple le nom de la table ou celui de la personne qui fait l'importation ;
+1. **Enter** a comment in the area entitled COMMENT, mandatory input field. The comment can be for example the name of the table or that of the person doing the import;
 
-2. **Cliquer** sur « Choisir un fichier » pour retrouver votre fichier à importer dans les emplacements possibles
+2. **Click** on "Choose a file" to find your file to import in the possible locations
 
-> où vous l'aviez enregistré au préalable, puis ;
+> where you previously saved it, then;
 
-1. **Cliquer** sur l'icône **«importer»** en bas et à droite de cette fenêtre.
+1. **Click** on the **"import"** icon at the bottom right of this window.
 
-# [Remarques]{.underline} :
+# [Remarks]{.underline}:
 
-- Lorsque votre importation a été une réussite, le nom des fichiers de données importés se retrouvent dans les premières lignes au niveau de la page des tables ou données déjà importées dans la base ;
+- When your import was successful, the names of the imported data files are found in the first lines at the page level of the tables or data already imported into the database;
 
-- Répéter les démarches 4 à 8 pour chaque importation de nouveau fichier de données ;
+- Repeat steps 4 to 8 for each new data file import;
 
-- La durée de l'importation d'un fichier varie en fonction de la taille du fichier et de la qualité de la connexion utilisée ;
+- The time it takes to import a file varies depending on the size of the file and the quality of the connection used;
 
 ```{=html}
 <!-- -->
 ```
 
-- Vous pouvez faire des recherches de tables ou fichiers déjà importés ou des filtres. A cet, au niveau de la page de la figure 32, spécifier le nom de votre fichier recherché dans la partie « rechercher ». Pour un filtre, cliquer sur « Filtrer » puis spécifier votre filtre à l'aide du formulaire de litre qui se présente à vous. Vous avez la possibilité de filtrer selon le pays, le commentaire fait sur le fichier à rechercher, la date d'importation du fichier, selon que l'importation du fichier a été une réussite et enfin appliquer vos options définies par rapport préalablement sur le filtre.
+- You can search tables or files already imported or filters. To do this, at the level of the page of figure 32, specify the name of your searched file in the “search” part. For a filter, click on “Filter” then specify your filter using the liter form presented to you. You have the possibility to filter according to the country, the comment made on the file to be searched, the date of import of the file, depending on whether the import of the file was successful and finally apply your options defined in relation to the filter beforehand .
 
-    1. # Compte et profil d'utilisateur
+    1. # Account and user profile
 
-Un administrateur peut changer son modifier les paramètres de son compte. Les modifications concernent le mot de passe et le nom d'utilisateur. Ces modifications peuvent intervenir dans les cas où un utilisateur a quelques difficultés à se connecter à son compte, le compte d'un utilisateur a été piraté ou bien d'autres cas.
+An administrator can change their edit their account settings. The changes concern the password and the user name. These changes can occur in cases where a user has some difficulty logging into their account, a user's account has been hacked, or many other cases.
 
-# Changer de mot de passe
+# Change password
 
-Pour changer son mot de passe,
+To change your password,
 
-- **Cliquer** sur le sous thème «Changer mon mot de passe» du thème «MON COMPTE» dans le menu de navigation de la page de saisie des données. Vous obtenez un formulaire de saisie ;
+- **Click** on the "Change my password" sub-theme of the "MY ACCOUNT" theme in the navigation menu of the data entry page. You get an input form;
 
-    1. **Remplir** le formulaire de saisir ;
+    1. **Complete** the form to enter;
 
-    2. **Cliquer** sur «Enregistrer» en bas du formulaire pour valider vos modifications apportées ;
+    2. **Click** on "Save" at the bottom of the form to commit your changes;
 
-![C:\Users\Administrateur\Desktop\points pf qual
-paye\Amandement_Nouv Juin 2021\documents mauritanie\doc\Capture
-d'écran changer de mots de
-pass.jpg](./media/image43.jpeg){width="6.4631944444444445in" height="1.815744750656168in"}
+![C:\Users\Administrator\Desktop\points pf qual<br>payroll\Amendment_New June 2021\Mauritania documents\doc\Capture<br>change screen words<br>pass.jpg](./media/image43.jpeg){width="6.4631944444444445in" height="1.815744750656168in"}
 
-Figure 29 : Formulaire pour changer de mot de passe
+Figure 29: Form to change password
 
-# Changer de profil
+# Change profile
 
-> Pour changer son profil :
+> To change your profile:
 
-1. **Cliquer** sur le sous thème «Modifier mon profil» du thème «MON COMPTE» dans le menu de navigation de la page de saisie des données. Vous obtenez un formulaire de saisie à remplir et comportant six (06) champs dont les intitulés sont : (i) Pays, (ii) Nom complet, (iii) Email, (iv) Groupe, (v) Mot de passe et (vi) Confirmation du mot de passe. dont le second est obligatoire; Pour remplir le formulaire de saisir,
+1. **Click** on the "Edit my profile" sub-theme of the "MY ACCOUNT" theme in the navigation menu of the data entry page. You obtain an input form to fill out and comprising six (06) fields whose titles are: (i) Country, (ii) Full name, (iii) Email, (iv) Group, (v) Password and (vi ) Password Confirmation. the second of which is mandatory; To complete the input form,
 
-2. **Saisir** le nom complet de l'utilisateur dans le champ « Nom complet ». Ce champ de saisie est obligatoire ;
+2. **Enter** the user's full name in the "Full name" field. This input field is mandatory;
 
-3. **Saisir** son mail dans le champ correspondant ;
+3. **Enter** your email in the corresponding field;
 
-4. **Saisir** le mot de passe dans le champ «Mot de passe» ;
+4. **Enter** the password in the "Password" field;
 
-5. **Confirmer** le mot de passe saisir précédemment dans le dernier champ puis
+5. **Confirm** the password entered previously in the last field then
 
-**Cliquer** sur «Enregistrer» pour valider vos modifications ou sur « Supprimer » pour effacer toutes les modifications apportées ou sur « Retour à la liste » pour ignorer votre désir de modification et garder les anciennes informations en l'état.
+**Click** on "Save" to validate your modifications or on "Delete" to erase all the modifications made or on "Return to the list" to ignore your wish to modify and keep the old information as it is.
 
-![](./media/image44.png){width="6.345833333333333in" height="3.0861111111111112in"} Figure 30 : Formulaire pour modifier un compte d'administrateur
+![](./media/image44.png){width="6.345833333333333in" height="3.0861111111111112in"} Figure 30: Form to modify an account 'administrator
 
-[^1]: Financé par l'Union Européenne et exécuté par l'Organisation des Nations Unies pour le Développement Industriel (ONUDI)
+[^1]: Funded by the European Union and executed by the United Nations Industrial Development Organization (UNIDO)
+
+
